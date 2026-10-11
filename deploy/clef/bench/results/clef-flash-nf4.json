@@ -1,0 +1,6182 @@
+{
+ "model": "clef-flash",
+ "quant": "nf4",
+ "torch": "2.11.0+rocm7.13.0",
+ "device": "Radeon 8060S Graphics",
+ "power_idle_before_load_w": 23.8,
+ "load_s": 12.2,
+ "memory_after_load": {
+  "used_gib": 8.69,
+  "peak_gib": 8.69
+ },
+ "fixed_tokens": {
+  "builtin": 315,
+  "custom": 414
+ },
+ "power_idle_loaded_w": 21.7,
+ "wall_s": 380.0,
+ "power_running_w": 100.2,
+ "memory_peak_gib": 9.53,
+ "rows": [
+  {
+   "id": "a001",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "primary",
+   "guess": "updates",
+   "text_chars": 686,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.54,
+    "probabilities": {
+     "primary": 0.4425,
+     "transactions": 0.0116,
+     "updates": 0.54,
+     "promotions": 0.0059
+    },
+    "tokens": 527,
+    "ms": 854.2
+   },
+   "custom": {
+    "choice": "primary",
+    "confidence": 0.6498,
+    "probabilities": {
+     "primary": 0.6498,
+     "transactions": 0.0094,
+     "updates": 0.2505,
+     "promotions": 0.0052,
+     "c1": 0.0309,
+     "c2": 0.0542
+    },
+    "tokens": 626,
+    "ms": 949.5
+   }
+  },
+  {
+   "id": "a002",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "transactions",
+   "text_chars": 853,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9794,
+    "probabilities": {
+     "primary": 0.0067,
+     "transactions": 0.9794,
+     "updates": 0.0064,
+     "promotions": 0.0075
+    },
+    "tokens": 651,
+    "ms": 1005.2
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.9722,
+    "probabilities": {
+     "primary": 0.0059,
+     "transactions": 0.9722,
+     "updates": 0.0057,
+     "promotions": 0.0076,
+     "c1": 0.0045,
+     "c2": 0.0041
+    },
+    "tokens": 750,
+    "ms": 1181.5
+   }
+  },
+  {
+   "id": "a003",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 2364,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9708,
+    "probabilities": {
+     "primary": 0.008,
+     "transactions": 0.0077,
+     "updates": 0.9708,
+     "promotions": 0.0135
+    },
+    "tokens": 773,
+    "ms": 1064.9
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.9711,
+    "probabilities": {
+     "primary": 0.0063,
+     "transactions": 0.0054,
+     "updates": 0.9711,
+     "promotions": 0.0101,
+     "c1": 0.0036,
+     "c2": 0.0034
+    },
+    "tokens": 872,
+    "ms": 1228.0
+   }
+  },
+  {
+   "id": "a004",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "promotions",
+   "text_chars": 1211,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9606,
+    "probabilities": {
+     "primary": 0.009,
+     "transactions": 0.0096,
+     "updates": 0.0209,
+     "promotions": 0.9606
+    },
+    "tokens": 710,
+    "ms": 1122.5
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.9524,
+    "probabilities": {
+     "primary": 0.0085,
+     "transactions": 0.0098,
+     "updates": 0.021,
+     "promotions": 0.9524,
+     "c1": 0.0041,
+     "c2": 0.0041
+    },
+    "tokens": 809,
+    "ms": 1119.2
+   }
+  },
+  {
+   "id": "a005",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "c1",
+   "guess": "primary",
+   "text_chars": 585,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.9177,
+    "probabilities": {
+     "primary": 0.9177,
+     "transactions": 0.0118,
+     "updates": 0.0649,
+     "promotions": 0.0056
+    },
+    "tokens": 496,
+    "ms": 874.7
+   },
+   "custom": {
+    "choice": "c1",
+    "confidence": 0.9807,
+    "probabilities": {
+     "primary": 0.0048,
+     "transactions": 0.0037,
+     "updates": 0.0035,
+     "promotions": 0.0036,
+     "c1": 0.9807,
+     "c2": 0.0036
+    },
+    "tokens": 595,
+    "ms": 937.2
+   }
+  },
+  {
+   "id": "a006",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "c2",
+   "guess": "transactions",
+   "text_chars": 1151,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9179,
+    "probabilities": {
+     "primary": 0.03,
+     "transactions": 0.9179,
+     "updates": 0.0213,
+     "promotions": 0.0309
+    },
+    "tokens": 708,
+    "ms": 1130.9
+   },
+   "custom": {
+    "choice": "c2",
+    "confidence": 0.8599,
+    "probabilities": {
+     "primary": 0.0178,
+     "transactions": 0.0906,
+     "updates": 0.0105,
+     "promotions": 0.0115,
+     "c1": 0.0096,
+     "c2": 0.8599
+    },
+    "tokens": 807,
+    "ms": 1122.8
+   }
+  },
+  {
+   "id": "a007",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 1229,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.8337,
+    "probabilities": {
+     "primary": 0.0281,
+     "transactions": 0.0199,
+     "updates": 0.8337,
+     "promotions": 0.1183
+    },
+    "tokens": 644,
+    "ms": 998.3
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.8093,
+    "probabilities": {
+     "primary": 0.0304,
+     "transactions": 0.0179,
+     "updates": 0.8093,
+     "promotions": 0.1222,
+     "c1": 0.0112,
+     "c2": 0.009
+    },
+    "tokens": 743,
+    "ms": 1161.0
+   }
+  },
+  {
+   "id": "a008",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "primary",
+   "text_chars": 973,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.8501,
+    "probabilities": {
+     "primary": 0.0635,
+     "transactions": 0.0176,
+     "updates": 0.0687,
+     "promotions": 0.8501
+    },
+    "tokens": 589,
+    "ms": 932.1
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.8372,
+    "probabilities": {
+     "primary": 0.0666,
+     "transactions": 0.0109,
+     "updates": 0.0709,
+     "promotions": 0.8372,
+     "c1": 0.0089,
+     "c2": 0.0056
+    },
+    "tokens": 688,
+    "ms": 1048.5
+   }
+  },
+  {
+   "id": "a009",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "primary",
+   "guess": "primary",
+   "text_chars": 961,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.8042,
+    "probabilities": {
+     "primary": 0.8042,
+     "transactions": 0.0245,
+     "updates": 0.1565,
+     "promotions": 0.0148
+    },
+    "tokens": 617,
+    "ms": 941.4
+   },
+   "custom": {
+    "choice": "primary",
+    "confidence": 0.8164,
+    "probabilities": {
+     "primary": 0.8164,
+     "transactions": 0.0216,
+     "updates": 0.1242,
+     "promotions": 0.019,
+     "c1": 0.0116,
+     "c2": 0.0072
+    },
+    "tokens": 716,
+    "ms": 1140.3
+   }
+  },
+  {
+   "id": "a010",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 1739,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.958,
+    "probabilities": {
+     "primary": 0.0156,
+     "transactions": 0.0142,
+     "updates": 0.958,
+     "promotions": 0.0122
+    },
+    "tokens": 716,
+    "ms": 1124.0
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.9523,
+    "probabilities": {
+     "primary": 0.0129,
+     "transactions": 0.0107,
+     "updates": 0.9523,
+     "promotions": 0.01,
+     "c1": 0.0069,
+     "c2": 0.0073
+    },
+    "tokens": 815,
+    "ms": 1127.7
+   }
+  },
+  {
+   "id": "a011",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "updates",
+   "text_chars": 631,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9568,
+    "probabilities": {
+     "primary": 0.0157,
+     "transactions": 0.9568,
+     "updates": 0.0122,
+     "promotions": 0.0152
+    },
+    "tokens": 587,
+    "ms": 934.6
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.9327,
+    "probabilities": {
+     "primary": 0.0147,
+     "transactions": 0.9327,
+     "updates": 0.0108,
+     "promotions": 0.013,
+     "c1": 0.0087,
+     "c2": 0.0201
+    },
+    "tokens": 686,
+    "ms": 1045.0
+   }
+  },
+  {
+   "id": "a012",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "promotions",
+   "text_chars": 1561,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9643,
+    "probabilities": {
+     "primary": 0.0084,
+     "transactions": 0.009,
+     "updates": 0.0184,
+     "promotions": 0.9643
+    },
+    "tokens": 794,
+    "ms": 1094.7
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.9654,
+    "probabilities": {
+     "primary": 0.0055,
+     "transactions": 0.0075,
+     "updates": 0.0155,
+     "promotions": 0.9654,
+     "c1": 0.0031,
+     "c2": 0.0029
+    },
+    "tokens": 893,
+    "ms": 1358.2
+   }
+  },
+  {
+   "id": "a013",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "primary",
+   "guess": "primary",
+   "text_chars": 367,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.9616,
+    "probabilities": {
+     "primary": 0.9616,
+     "transactions": 0.012,
+     "updates": 0.0136,
+     "promotions": 0.0128
+    },
+    "tokens": 434,
+    "ms": 827.8
+   },
+   "custom": {
+    "choice": "primary",
+    "confidence": 0.9049,
+    "probabilities": {
+     "primary": 0.9049,
+     "transactions": 0.011,
+     "updates": 0.0132,
+     "promotions": 0.0117,
+     "c1": 0.0239,
+     "c2": 0.0354
+    },
+    "tokens": 533,
+    "ms": 870.2
+   }
+  },
+  {
+   "id": "a014",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "transactions",
+   "text_chars": 955,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.8874,
+    "probabilities": {
+     "primary": 0.0326,
+     "transactions": 0.8874,
+     "updates": 0.0375,
+     "promotions": 0.0425
+    },
+    "tokens": 619,
+    "ms": 950.0
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.8885,
+    "probabilities": {
+     "primary": 0.0246,
+     "transactions": 0.8885,
+     "updates": 0.0292,
+     "promotions": 0.0358,
+     "c1": 0.0109,
+     "c2": 0.0109
+    },
+    "tokens": 718,
+    "ms": 1129.3
+   }
+  },
+  {
+   "id": "a015",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 1445,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.8953,
+    "probabilities": {
+     "primary": 0.0314,
+     "transactions": 0.0355,
+     "updates": 0.8953,
+     "promotions": 0.0378
+    },
+    "tokens": 668,
+    "ms": 1019.5
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.8733,
+    "probabilities": {
+     "primary": 0.0294,
+     "transactions": 0.0313,
+     "updates": 0.8733,
+     "promotions": 0.0339,
+     "c1": 0.0176,
+     "c2": 0.0146
+    },
+    "tokens": 767,
+    "ms": 1192.8
+   }
+  },
+  {
+   "id": "a016",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "updates",
+   "text_chars": 1291,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.6724,
+    "probabilities": {
+     "primary": 0.041,
+     "transactions": 0.1942,
+     "updates": 0.0924,
+     "promotions": 0.6724
+    },
+    "tokens": 703,
+    "ms": 1094.7
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.7064,
+    "probabilities": {
+     "primary": 0.0352,
+     "transactions": 0.1691,
+     "updates": 0.0756,
+     "promotions": 0.7064,
+     "c1": 0.0067,
+     "c2": 0.0069
+    },
+    "tokens": 802,
+    "ms": 1109.9
+   }
+  },
+  {
+   "id": "a017",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "primary",
+   "guess": "primary",
+   "text_chars": 338,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.9514,
+    "probabilities": {
+     "primary": 0.9514,
+     "transactions": 0.0086,
+     "updates": 0.0333,
+     "promotions": 0.0067
+    },
+    "tokens": 428,
+    "ms": 819.7
+   },
+   "custom": {
+    "choice": "primary",
+    "confidence": 0.9242,
+    "probabilities": {
+     "primary": 0.9242,
+     "transactions": 0.0084,
+     "updates": 0.0361,
+     "promotions": 0.0066,
+     "c1": 0.0179,
+     "c2": 0.0068
+    },
+    "tokens": 527,
+    "ms": 847.9
+   }
+  },
+  {
+   "id": "a018",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "transactions",
+   "text_chars": 1172,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9669,
+    "probabilities": {
+     "primary": 0.0097,
+     "transactions": 0.9669,
+     "updates": 0.0113,
+     "promotions": 0.0121
+    },
+    "tokens": 796,
+    "ms": 1091.3
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.9596,
+    "probabilities": {
+     "primary": 0.0074,
+     "transactions": 0.9596,
+     "updates": 0.0093,
+     "promotions": 0.0119,
+     "c1": 0.0054,
+     "c2": 0.0064
+    },
+    "tokens": 895,
+    "ms": 1356.3
+   }
+  },
+  {
+   "id": "a019",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "c1",
+   "guess": "updates",
+   "text_chars": 1803,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9632,
+    "probabilities": {
+     "primary": 0.0135,
+     "transactions": 0.0093,
+     "updates": 0.9632,
+     "promotions": 0.014
+    },
+    "tokens": 773,
+    "ms": 1073.9
+   },
+   "custom": {
+    "choice": "c1",
+    "confidence": 0.9654,
+    "probabilities": {
+     "primary": 0.0053,
+     "transactions": 0.0043,
+     "updates": 0.0169,
+     "promotions": 0.0044,
+     "c1": 0.9654,
+     "c2": 0.0038
+    },
+    "tokens": 872,
+    "ms": 1233.3
+   }
+  },
+  {
+   "id": "a020",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "promotions",
+   "text_chars": 1321,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.8962,
+    "probabilities": {
+     "primary": 0.0147,
+     "transactions": 0.0095,
+     "updates": 0.0795,
+     "promotions": 0.8962
+    },
+    "tokens": 702,
+    "ms": 1083.5
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.6448,
+    "probabilities": {
+     "primary": 0.0154,
+     "transactions": 0.0114,
+     "updates": 0.0974,
+     "promotions": 0.6448,
+     "c1": 0.0081,
+     "c2": 0.2228
+    },
+    "tokens": 801,
+    "ms": 1105.5
+   }
+  },
+  {
+   "id": "a021",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "c2",
+   "guess": "primary",
+   "text_chars": 631,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.8817,
+    "probabilities": {
+     "primary": 0.8817,
+     "transactions": 0.0609,
+     "updates": 0.0412,
+     "promotions": 0.0161
+    },
+    "tokens": 552,
+    "ms": 885.9
+   },
+   "custom": {
+    "choice": "c2",
+    "confidence": 0.9553,
+    "probabilities": {
+     "primary": 0.0185,
+     "transactions": 0.0075,
+     "updates": 0.0072,
+     "promotions": 0.0051,
+     "c1": 0.0064,
+     "c2": 0.9553
+    },
+    "tokens": 651,
+    "ms": 991.0
+   }
+  },
+  {
+   "id": "a022",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "c1",
+   "guess": "transactions",
+   "text_chars": 1028,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9456,
+    "probabilities": {
+     "primary": 0.0181,
+     "transactions": 0.9456,
+     "updates": 0.0181,
+     "promotions": 0.0181
+    },
+    "tokens": 638,
+    "ms": 954.4
+   },
+   "custom": {
+    "choice": "c1",
+    "confidence": 0.9449,
+    "probabilities": {
+     "primary": 0.0068,
+     "transactions": 0.0306,
+     "updates": 0.007,
+     "promotions": 0.0052,
+     "c1": 0.9449,
+     "c2": 0.0055
+    },
+    "tokens": 737,
+    "ms": 1143.4
+   }
+  },
+  {
+   "id": "a023",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 1069,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9076,
+    "probabilities": {
+     "primary": 0.0372,
+     "transactions": 0.0281,
+     "updates": 0.9076,
+     "promotions": 0.0272
+    },
+    "tokens": 720,
+    "ms": 1109.9
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.8839,
+    "probabilities": {
+     "primary": 0.0379,
+     "transactions": 0.0245,
+     "updates": 0.8839,
+     "promotions": 0.0253,
+     "c1": 0.014,
+     "c2": 0.0144
+    },
+    "tokens": 819,
+    "ms": 1132.9
+   }
+  },
+  {
+   "id": "a024",
+   "gold": "promotions",
+   "accept": [
+    "updates"
+   ],
+   "gold_custom": "promotions",
+   "guess": "promotions",
+   "text_chars": 1394,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.8977,
+    "probabilities": {
+     "primary": 0.0286,
+     "transactions": 0.03,
+     "updates": 0.0437,
+     "promotions": 0.8977
+    },
+    "tokens": 759,
+    "ms": 1165.4
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.9091,
+    "probabilities": {
+     "primary": 0.0235,
+     "transactions": 0.025,
+     "updates": 0.0311,
+     "promotions": 0.9091,
+     "c1": 0.0058,
+     "c2": 0.0056
+    },
+    "tokens": 858,
+    "ms": 1312.2
+   }
+  },
+  {
+   "id": "a025",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "primary",
+   "guess": "primary",
+   "text_chars": 316,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.9125,
+    "probabilities": {
+     "primary": 0.9125,
+     "transactions": 0.0143,
+     "updates": 0.057,
+     "promotions": 0.0162
+    },
+    "tokens": 417,
+    "ms": 807.0
+   },
+   "custom": {
+    "choice": "primary",
+    "confidence": 0.8954,
+    "probabilities": {
+     "primary": 0.8954,
+     "transactions": 0.0138,
+     "updates": 0.0513,
+     "promotions": 0.0169,
+     "c1": 0.0156,
+     "c2": 0.0069
+    },
+    "tokens": 516,
+    "ms": 854.8
+   }
+  },
+  {
+   "id": "a026",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "transactions",
+   "text_chars": 875,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9651,
+    "probabilities": {
+     "primary": 0.0095,
+     "transactions": 0.9651,
+     "updates": 0.0129,
+     "promotions": 0.0125
+    },
+    "tokens": 646,
+    "ms": 1001.2
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.9503,
+    "probabilities": {
+     "primary": 0.0112,
+     "transactions": 0.9503,
+     "updates": 0.0127,
+     "promotions": 0.0131,
+     "c1": 0.0066,
+     "c2": 0.006
+    },
+    "tokens": 745,
+    "ms": 1149.9
+   }
+  },
+  {
+   "id": "a027",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 812,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9636,
+    "probabilities": {
+     "primary": 0.0142,
+     "transactions": 0.0101,
+     "updates": 0.9636,
+     "promotions": 0.0121
+    },
+    "tokens": 567,
+    "ms": 905.7
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.946,
+    "probabilities": {
+     "primary": 0.0103,
+     "transactions": 0.0075,
+     "updates": 0.946,
+     "promotions": 0.0093,
+     "c1": 0.0217,
+     "c2": 0.0052
+    },
+    "tokens": 666,
+    "ms": 1023.0
+   }
+  },
+  {
+   "id": "a028",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "c1",
+   "guess": "promotions",
+   "text_chars": 1291,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.5662,
+    "probabilities": {
+     "primary": 0.0261,
+     "transactions": 0.0216,
+     "updates": 0.3861,
+     "promotions": 0.5662
+    },
+    "tokens": 727,
+    "ms": 1121.6
+   },
+   "custom": {
+    "choice": "c1",
+    "confidence": 0.963,
+    "probabilities": {
+     "primary": 0.0048,
+     "transactions": 0.0038,
+     "updates": 0.0087,
+     "promotions": 0.0152,
+     "c1": 0.963,
+     "c2": 0.0045
+    },
+    "tokens": 826,
+    "ms": 1153.9
+   }
+  },
+  {
+   "id": "a029",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "primary",
+   "guess": "primary",
+   "text_chars": 576,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.7271,
+    "probabilities": {
+     "primary": 0.7271,
+     "transactions": 0.1768,
+     "updates": 0.0507,
+     "promotions": 0.0454
+    },
+    "tokens": 518,
+    "ms": 857.9
+   },
+   "custom": {
+    "choice": "primary",
+    "confidence": 0.7592,
+    "probabilities": {
+     "primary": 0.7592,
+     "transactions": 0.0958,
+     "updates": 0.046,
+     "promotions": 0.0467,
+     "c1": 0.0406,
+     "c2": 0.0118
+    },
+    "tokens": 617,
+    "ms": 938.1
+   }
+  },
+  {
+   "id": "a030",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "transactions",
+   "text_chars": 895,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9268,
+    "probabilities": {
+     "primary": 0.0234,
+     "transactions": 0.9268,
+     "updates": 0.0257,
+     "promotions": 0.0241
+    },
+    "tokens": 645,
+    "ms": 999.5
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.906,
+    "probabilities": {
+     "primary": 0.0208,
+     "transactions": 0.906,
+     "updates": 0.0236,
+     "promotions": 0.0251,
+     "c1": 0.0126,
+     "c2": 0.0119
+    },
+    "tokens": 744,
+    "ms": 1141.5
+   }
+  },
+  {
+   "id": "a031",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "c2",
+   "guess": "transactions",
+   "text_chars": 1090,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.4873,
+    "probabilities": {
+     "primary": 0.1429,
+     "transactions": 0.4873,
+     "updates": 0.3097,
+     "promotions": 0.06
+    },
+    "tokens": 719,
+    "ms": 1116.3
+   },
+   "custom": {
+    "choice": "c2",
+    "confidence": 0.9648,
+    "probabilities": {
+     "primary": 0.0086,
+     "transactions": 0.0089,
+     "updates": 0.0067,
+     "promotions": 0.0054,
+     "c1": 0.0056,
+     "c2": 0.9648
+    },
+    "tokens": 818,
+    "ms": 1123.4
+   }
+  },
+  {
+   "id": "a032",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "promotions",
+   "text_chars": 1294,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9735,
+    "probabilities": {
+     "primary": 0.0086,
+     "transactions": 0.0086,
+     "updates": 0.0094,
+     "promotions": 0.9735
+    },
+    "tokens": 746,
+    "ms": 1152.4
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.9669,
+    "probabilities": {
+     "primary": 0.0079,
+     "transactions": 0.0087,
+     "updates": 0.0093,
+     "promotions": 0.9669,
+     "c1": 0.0037,
+     "c2": 0.0035
+    },
+    "tokens": 845,
+    "ms": 1197.8
+   }
+  },
+  {
+   "id": "a033",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "primary",
+   "guess": "primary",
+   "text_chars": 665,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.8223,
+    "probabilities": {
+     "primary": 0.8223,
+     "transactions": 0.0243,
+     "updates": 0.0498,
+     "promotions": 0.1037
+    },
+    "tokens": 569,
+    "ms": 910.8
+   },
+   "custom": {
+    "choice": "primary",
+    "confidence": 0.7493,
+    "probabilities": {
+     "primary": 0.7493,
+     "transactions": 0.0271,
+     "updates": 0.0498,
+     "promotions": 0.1176,
+     "c1": 0.037,
+     "c2": 0.0192
+    },
+    "tokens": 668,
+    "ms": 1015.3
+   }
+  },
+  {
+   "id": "a034",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "c2",
+   "guess": "transactions",
+   "text_chars": 1042,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.945,
+    "probabilities": {
+     "primary": 0.0206,
+     "transactions": 0.945,
+     "updates": 0.0146,
+     "promotions": 0.0199
+    },
+    "tokens": 701,
+    "ms": 1108.1
+   },
+   "custom": {
+    "choice": "c2",
+    "confidence": 0.8617,
+    "probabilities": {
+     "primary": 0.0158,
+     "transactions": 0.0952,
+     "updates": 0.0087,
+     "promotions": 0.0099,
+     "c1": 0.0087,
+     "c2": 0.8617
+    },
+    "tokens": 800,
+    "ms": 1110.1
+   }
+  },
+  {
+   "id": "a035",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "c1",
+   "guess": "updates",
+   "text_chars": 1305,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9384,
+    "probabilities": {
+     "primary": 0.029,
+     "transactions": 0.016,
+     "updates": 0.9384,
+     "promotions": 0.0165
+    },
+    "tokens": 676,
+    "ms": 1034.6
+   },
+   "custom": {
+    "choice": "c1",
+    "confidence": 0.9545,
+    "probabilities": {
+     "primary": 0.0085,
+     "transactions": 0.0066,
+     "updates": 0.0179,
+     "promotions": 0.006,
+     "c1": 0.9545,
+     "c2": 0.0066
+    },
+    "tokens": 775,
+    "ms": 1067.7
+   }
+  },
+  {
+   "id": "a036",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "promotions",
+   "text_chars": 1231,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9764,
+    "probabilities": {
+     "primary": 0.0057,
+     "transactions": 0.0078,
+     "updates": 0.01,
+     "promotions": 0.9764
+    },
+    "tokens": 737,
+    "ms": 1140.7
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.9711,
+    "probabilities": {
+     "primary": 0.0049,
+     "transactions": 0.0083,
+     "updates": 0.0097,
+     "promotions": 0.9711,
+     "c1": 0.0031,
+     "c2": 0.0029
+    },
+    "tokens": 836,
+    "ms": 1186.5
+   }
+  },
+  {
+   "id": "a037",
+   "gold": "primary",
+   "accept": [
+    "transactions"
+   ],
+   "gold_custom": "primary",
+   "guess": "updates",
+   "text_chars": 605,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.6263,
+    "probabilities": {
+     "primary": 0.0766,
+     "transactions": 0.6263,
+     "updates": 0.257,
+     "promotions": 0.04
+    },
+    "tokens": 513,
+    "ms": 849.4
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.6177,
+    "probabilities": {
+     "primary": 0.1,
+     "transactions": 0.6177,
+     "updates": 0.2135,
+     "promotions": 0.0557,
+     "c1": 0.0076,
+     "c2": 0.0056
+    },
+    "tokens": 612,
+    "ms": 946.3
+   }
+  },
+  {
+   "id": "a038",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "transactions",
+   "text_chars": 726,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9505,
+    "probabilities": {
+     "primary": 0.0147,
+     "transactions": 0.9505,
+     "updates": 0.0171,
+     "promotions": 0.0177
+    },
+    "tokens": 600,
+    "ms": 936.2
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.9402,
+    "probabilities": {
+     "primary": 0.0126,
+     "transactions": 0.9402,
+     "updates": 0.0143,
+     "promotions": 0.0162,
+     "c1": 0.0084,
+     "c2": 0.0084
+    },
+    "tokens": 699,
+    "ms": 1087.4
+   }
+  },
+  {
+   "id": "a039",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 1040,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.8518,
+    "probabilities": {
+     "primary": 0.0451,
+     "transactions": 0.0451,
+     "updates": 0.8518,
+     "promotions": 0.058
+    },
+    "tokens": 690,
+    "ms": 1061.6
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.823,
+    "probabilities": {
+     "primary": 0.0403,
+     "transactions": 0.0379,
+     "updates": 0.823,
+     "promotions": 0.0569,
+     "c1": 0.0209,
+     "c2": 0.0209
+    },
+    "tokens": 789,
+    "ms": 1091.7
+   }
+  },
+  {
+   "id": "a040",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "promotions",
+   "text_chars": 1264,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9787,
+    "probabilities": {
+     "primary": 0.0064,
+     "transactions": 0.0056,
+     "updates": 0.0093,
+     "promotions": 0.9787
+    },
+    "tokens": 679,
+    "ms": 1038.5
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.9732,
+    "probabilities": {
+     "primary": 0.0057,
+     "transactions": 0.005,
+     "updates": 0.0091,
+     "promotions": 0.9732,
+     "c1": 0.0039,
+     "c2": 0.003
+    },
+    "tokens": 778,
+    "ms": 1076.0
+   }
+  },
+  {
+   "id": "a041",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "primary",
+   "guess": "primary",
+   "text_chars": 362,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.9416,
+    "probabilities": {
+     "primary": 0.9416,
+     "transactions": 0.0254,
+     "updates": 0.0288,
+     "promotions": 0.0042
+    },
+    "tokens": 452,
+    "ms": 848.3
+   },
+   "custom": {
+    "choice": "primary",
+    "confidence": 0.8943,
+    "probabilities": {
+     "primary": 0.8943,
+     "transactions": 0.0363,
+     "updates": 0.0358,
+     "promotions": 0.0067,
+     "c1": 0.0161,
+     "c2": 0.0107
+    },
+    "tokens": 551,
+    "ms": 884.8
+   }
+  },
+  {
+   "id": "a042",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "primary",
+   "text_chars": 932,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9616,
+    "probabilities": {
+     "primary": 0.0115,
+     "transactions": 0.9616,
+     "updates": 0.0162,
+     "promotions": 0.0108
+    },
+    "tokens": 624,
+    "ms": 953.2
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.9498,
+    "probabilities": {
+     "primary": 0.0118,
+     "transactions": 0.9498,
+     "updates": 0.0138,
+     "promotions": 0.0104,
+     "c1": 0.0074,
+     "c2": 0.0069
+    },
+    "tokens": 723,
+    "ms": 1137.3
+   }
+  },
+  {
+   "id": "a043",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 1280,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9666,
+    "probabilities": {
+     "primary": 0.0177,
+     "transactions": 0.0041,
+     "updates": 0.9666,
+     "promotions": 0.0116
+    },
+    "tokens": 740,
+    "ms": 1150.6
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.9553,
+    "probabilities": {
+     "primary": 0.0175,
+     "transactions": 0.0048,
+     "updates": 0.9553,
+     "promotions": 0.0141,
+     "c1": 0.0048,
+     "c2": 0.0036
+    },
+    "tokens": 839,
+    "ms": 1176.6
+   }
+  },
+  {
+   "id": "a044",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "updates",
+   "text_chars": 1390,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9316,
+    "probabilities": {
+     "primary": 0.0252,
+     "transactions": 0.0212,
+     "updates": 0.0219,
+     "promotions": 0.9316
+    },
+    "tokens": 730,
+    "ms": 1150.0
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.9019,
+    "probabilities": {
+     "primary": 0.0294,
+     "transactions": 0.0202,
+     "updates": 0.0215,
+     "promotions": 0.9019,
+     "c1": 0.0096,
+     "c2": 0.0173
+    },
+    "tokens": 829,
+    "ms": 1172.9
+   }
+  },
+  {
+   "id": "a045",
+   "gold": "primary",
+   "accept": [
+    "updates"
+   ],
+   "gold_custom": "c1",
+   "guess": "primary",
+   "text_chars": 984,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.5959,
+    "probabilities": {
+     "primary": 0.5959,
+     "transactions": 0.0712,
+     "updates": 0.3067,
+     "promotions": 0.0262
+    },
+    "tokens": 617,
+    "ms": 940.3
+   },
+   "custom": {
+    "choice": "c1",
+    "confidence": 0.9803,
+    "probabilities": {
+     "primary": 0.0052,
+     "transactions": 0.0034,
+     "updates": 0.0036,
+     "promotions": 0.0036,
+     "c1": 0.9803,
+     "c2": 0.0039
+    },
+    "tokens": 716,
+    "ms": 1130.2
+   }
+  },
+  {
+   "id": "a046",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "primary",
+   "text_chars": 848,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.7516,
+    "probabilities": {
+     "primary": 0.1369,
+     "transactions": 0.7516,
+     "updates": 0.0536,
+     "promotions": 0.058
+    },
+    "tokens": 603,
+    "ms": 937.5
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.592,
+    "probabilities": {
+     "primary": 0.271,
+     "transactions": 0.592,
+     "updates": 0.0442,
+     "promotions": 0.0486,
+     "c1": 0.0155,
+     "c2": 0.0286
+    },
+    "tokens": 702,
+    "ms": 1081.6
+   }
+  },
+  {
+   "id": "a047",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 1336,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9655,
+    "probabilities": {
+     "primary": 0.0104,
+     "transactions": 0.0095,
+     "updates": 0.9655,
+     "promotions": 0.0147
+    },
+    "tokens": 679,
+    "ms": 1027.7
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.9577,
+    "probabilities": {
+     "primary": 0.0092,
+     "transactions": 0.0079,
+     "updates": 0.9577,
+     "promotions": 0.013,
+     "c1": 0.0056,
+     "c2": 0.0066
+    },
+    "tokens": 778,
+    "ms": 1074.4
+   }
+  },
+  {
+   "id": "a048",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "updates",
+   "text_chars": 1258,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9186,
+    "probabilities": {
+     "primary": 0.0148,
+     "transactions": 0.0139,
+     "updates": 0.0526,
+     "promotions": 0.9186
+    },
+    "tokens": 669,
+    "ms": 1023.2
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.9148,
+    "probabilities": {
+     "primary": 0.0133,
+     "transactions": 0.0148,
+     "updates": 0.0463,
+     "promotions": 0.9148,
+     "c1": 0.0059,
+     "c2": 0.005
+    },
+    "tokens": 768,
+    "ms": 1186.6
+   }
+  },
+  {
+   "id": "a049",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "c2",
+   "guess": "primary",
+   "text_chars": 809,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.6677,
+    "probabilities": {
+     "primary": 0.2485,
+     "transactions": 0.6677,
+     "updates": 0.0555,
+     "promotions": 0.0283
+    },
+    "tokens": 586,
+    "ms": 931.5
+   },
+   "custom": {
+    "choice": "c2",
+    "confidence": 0.6866,
+    "probabilities": {
+     "primary": 0.0901,
+     "transactions": 0.1497,
+     "updates": 0.0302,
+     "promotions": 0.0207,
+     "c1": 0.0228,
+     "c2": 0.6866
+    },
+    "tokens": 685,
+    "ms": 1046.0
+   }
+  },
+  {
+   "id": "a050",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "transactions",
+   "text_chars": 861,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.8716,
+    "probabilities": {
+     "primary": 0.0414,
+     "transactions": 0.8716,
+     "updates": 0.0354,
+     "promotions": 0.0515
+    },
+    "tokens": 597,
+    "ms": 938.1
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.8077,
+    "probabilities": {
+     "primary": 0.0412,
+     "transactions": 0.8077,
+     "updates": 0.0352,
+     "promotions": 0.052,
+     "c1": 0.0227,
+     "c2": 0.0412
+    },
+    "tokens": 696,
+    "ms": 1074.5
+   }
+  },
+  {
+   "id": "a051",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 1320,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9279,
+    "probabilities": {
+     "primary": 0.0323,
+     "transactions": 0.0122,
+     "updates": 0.9279,
+     "promotions": 0.0276
+    },
+    "tokens": 710,
+    "ms": 1114.2
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.9105,
+    "probabilities": {
+     "primary": 0.0319,
+     "transactions": 0.0102,
+     "updates": 0.9105,
+     "promotions": 0.03,
+     "c1": 0.0117,
+     "c2": 0.0057
+    },
+    "tokens": 809,
+    "ms": 1118.5
+   }
+  },
+  {
+   "id": "a052",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "updates",
+   "text_chars": 1291,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9267,
+    "probabilities": {
+     "primary": 0.0152,
+     "transactions": 0.0167,
+     "updates": 0.0414,
+     "promotions": 0.9267
+    },
+    "tokens": 690,
+    "ms": 1055.8
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.9253,
+    "probabilities": {
+     "primary": 0.013,
+     "transactions": 0.014,
+     "updates": 0.0359,
+     "promotions": 0.9253,
+     "c1": 0.0051,
+     "c2": 0.0067
+    },
+    "tokens": 789,
+    "ms": 1092.9
+   }
+  },
+  {
+   "id": "a053",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "primary",
+   "guess": "primary",
+   "text_chars": 252,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.9458,
+    "probabilities": {
+     "primary": 0.9458,
+     "transactions": 0.0184,
+     "updates": 0.0184,
+     "promotions": 0.0173
+    },
+    "tokens": 418,
+    "ms": 807.2
+   },
+   "custom": {
+    "choice": "primary",
+    "confidence": 0.9252,
+    "probabilities": {
+     "primary": 0.9252,
+     "transactions": 0.0143,
+     "updates": 0.0143,
+     "promotions": 0.013,
+     "c1": 0.0214,
+     "c2": 0.0118
+    },
+    "tokens": 517,
+    "ms": 856.4
+   }
+  },
+  {
+   "id": "a054",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "transactions",
+   "text_chars": 638,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9655,
+    "probabilities": {
+     "primary": 0.0095,
+     "transactions": 0.9655,
+     "updates": 0.0115,
+     "promotions": 0.0135
+    },
+    "tokens": 572,
+    "ms": 918.4
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.9522,
+    "probabilities": {
+     "primary": 0.0097,
+     "transactions": 0.9522,
+     "updates": 0.0117,
+     "promotions": 0.0137,
+     "c1": 0.0065,
+     "c2": 0.0063
+    },
+    "tokens": 671,
+    "ms": 1022.2
+   }
+  },
+  {
+   "id": "a055",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 858,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9448,
+    "probabilities": {
+     "primary": 0.0219,
+     "transactions": 0.0125,
+     "updates": 0.9448,
+     "promotions": 0.0209
+    },
+    "tokens": 552,
+    "ms": 883.2
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.9396,
+    "probabilities": {
+     "primary": 0.0172,
+     "transactions": 0.0104,
+     "updates": 0.9396,
+     "promotions": 0.0178,
+     "c1": 0.0087,
+     "c2": 0.0063
+    },
+    "tokens": 651,
+    "ms": 992.3
+   }
+  },
+  {
+   "id": "a056",
+   "gold": "promotions",
+   "accept": [
+    "updates"
+   ],
+   "gold_custom": "promotions",
+   "guess": "updates",
+   "text_chars": 1316,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.6459,
+    "probabilities": {
+     "primary": 0.0288,
+     "transactions": 0.013,
+     "updates": 0.6459,
+     "promotions": 0.3123
+    },
+    "tokens": 694,
+    "ms": 1067.0
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.6718,
+    "probabilities": {
+     "primary": 0.0314,
+     "transactions": 0.0102,
+     "updates": 0.6718,
+     "promotions": 0.2672,
+     "c1": 0.0109,
+     "c2": 0.0085
+    },
+    "tokens": 793,
+    "ms": 1096.8
+   }
+  },
+  {
+   "id": "a057",
+   "gold": "primary",
+   "accept": [
+    "transactions"
+   ],
+   "gold_custom": "c2",
+   "guess": "primary",
+   "text_chars": 823,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.7303,
+    "probabilities": {
+     "primary": 0.1507,
+     "transactions": 0.7303,
+     "updates": 0.0669,
+     "promotions": 0.0521
+    },
+    "tokens": 595,
+    "ms": 926.7
+   },
+   "custom": {
+    "choice": "c2",
+    "confidence": 0.9455,
+    "probabilities": {
+     "primary": 0.0139,
+     "transactions": 0.019,
+     "updates": 0.0078,
+     "promotions": 0.0069,
+     "c1": 0.0069,
+     "c2": 0.9455
+    },
+    "tokens": 694,
+    "ms": 1055.0
+   }
+  },
+  {
+   "id": "a058",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "primary",
+   "text_chars": 1007,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9046,
+    "probabilities": {
+     "primary": 0.0337,
+     "transactions": 0.9046,
+     "updates": 0.028,
+     "promotions": 0.0337
+    },
+    "tokens": 686,
+    "ms": 1042.6
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.8372,
+    "probabilities": {
+     "primary": 0.0354,
+     "transactions": 0.8372,
+     "updates": 0.0332,
+     "promotions": 0.0407,
+     "c1": 0.0152,
+     "c2": 0.0382
+    },
+    "tokens": 785,
+    "ms": 1084.3
+   }
+  },
+  {
+   "id": "a059",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 1358,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9722,
+    "probabilities": {
+     "primary": 0.0098,
+     "transactions": 0.0082,
+     "updates": 0.9722,
+     "promotions": 0.0098
+    },
+    "tokens": 712,
+    "ms": 1115.9
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.9631,
+    "probabilities": {
+     "primary": 0.0094,
+     "transactions": 0.0069,
+     "updates": 0.9631,
+     "promotions": 0.0094,
+     "c1": 0.0057,
+     "c2": 0.0054
+    },
+    "tokens": 811,
+    "ms": 1120.0
+   }
+  },
+  {
+   "id": "a060",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "promotions",
+   "text_chars": 1321,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9413,
+    "probabilities": {
+     "primary": 0.0132,
+     "transactions": 0.0128,
+     "updates": 0.0327,
+     "promotions": 0.9413
+    },
+    "tokens": 738,
+    "ms": 1153.2
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.9294,
+    "probabilities": {
+     "primary": 0.0111,
+     "transactions": 0.0127,
+     "updates": 0.0363,
+     "promotions": 0.9294,
+     "c1": 0.0056,
+     "c2": 0.0049
+    },
+    "tokens": 837,
+    "ms": 1207.3
+   }
+  },
+  {
+   "id": "b001",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 2086,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9783,
+    "probabilities": {
+     "primary": 0.0065,
+     "transactions": 0.0065,
+     "updates": 0.9783,
+     "promotions": 0.0087
+    },
+    "tokens": 715,
+    "ms": 1120.3
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.9769,
+    "probabilities": {
+     "primary": 0.005,
+     "transactions": 0.0046,
+     "updates": 0.9769,
+     "promotions": 0.0071,
+     "c1": 0.0033,
+     "c2": 0.0031
+    },
+    "tokens": 814,
+    "ms": 1118.0
+   }
+  },
+  {
+   "id": "b002",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "primary",
+   "guess": "primary",
+   "text_chars": 648,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.883,
+    "probabilities": {
+     "primary": 0.883,
+     "transactions": 0.0391,
+     "updates": 0.0464,
+     "promotions": 0.0314
+    },
+    "tokens": 537,
+    "ms": 869.8
+   },
+   "custom": {
+    "choice": "primary",
+    "confidence": 0.7806,
+    "probabilities": {
+     "primary": 0.7806,
+     "transactions": 0.0476,
+     "updates": 0.0583,
+     "promotions": 0.0476,
+     "c1": 0.0395,
+     "c2": 0.0263
+    },
+    "tokens": 636,
+    "ms": 951.5
+   }
+  },
+  {
+   "id": "b003",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "transactions",
+   "text_chars": 1004,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.949,
+    "probabilities": {
+     "primary": 0.0144,
+     "transactions": 0.949,
+     "updates": 0.0168,
+     "promotions": 0.0197
+    },
+    "tokens": 648,
+    "ms": 1001.8
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.9375,
+    "probabilities": {
+     "primary": 0.0126,
+     "transactions": 0.9375,
+     "updates": 0.0138,
+     "promotions": 0.0177,
+     "c1": 0.0092,
+     "c2": 0.0092
+    },
+    "tokens": 747,
+    "ms": 1171.4
+   }
+  },
+  {
+   "id": "b004",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "promotions",
+   "text_chars": 1401,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9657,
+    "probabilities": {
+     "primary": 0.0082,
+     "transactions": 0.0109,
+     "updates": 0.0151,
+     "promotions": 0.9657
+    },
+    "tokens": 795,
+    "ms": 1108.2
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.9602,
+    "probabilities": {
+     "primary": 0.0071,
+     "transactions": 0.0111,
+     "updates": 0.0142,
+     "promotions": 0.9602,
+     "c1": 0.0038,
+     "c2": 0.0037
+    },
+    "tokens": 894,
+    "ms": 1255.8
+   }
+  },
+  {
+   "id": "b005",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "c1",
+   "guess": "primary",
+   "text_chars": 492,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.8722,
+    "probabilities": {
+     "primary": 0.8722,
+     "transactions": 0.0089,
+     "updates": 0.1126,
+     "promotions": 0.0063
+    },
+    "tokens": 487,
+    "ms": 878.2
+   },
+   "custom": {
+    "choice": "c1",
+    "confidence": 0.9755,
+    "probabilities": {
+     "primary": 0.0069,
+     "transactions": 0.0042,
+     "updates": 0.0046,
+     "promotions": 0.0042,
+     "c1": 0.9755,
+     "c2": 0.0045
+    },
+    "tokens": 586,
+    "ms": 919.4
+   }
+  },
+  {
+   "id": "b006",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 636,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9063,
+    "probabilities": {
+     "primary": 0.0365,
+     "transactions": 0.0259,
+     "updates": 0.9063,
+     "promotions": 0.0313
+    },
+    "tokens": 569,
+    "ms": 905.5
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.9019,
+    "probabilities": {
+     "primary": 0.0318,
+     "transactions": 0.0181,
+     "updates": 0.9019,
+     "promotions": 0.0285,
+     "c1": 0.0086,
+     "c2": 0.011
+    },
+    "tokens": 668,
+    "ms": 1016.6
+   }
+  },
+  {
+   "id": "b007",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "transactions",
+   "text_chars": 987,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9459,
+    "probabilities": {
+     "primary": 0.0175,
+     "transactions": 0.9459,
+     "updates": 0.0175,
+     "promotions": 0.0192
+    },
+    "tokens": 655,
+    "ms": 990.3
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.9273,
+    "probabilities": {
+     "primary": 0.0166,
+     "transactions": 0.9273,
+     "updates": 0.0166,
+     "promotions": 0.02,
+     "c1": 0.0101,
+     "c2": 0.0095
+    },
+    "tokens": 754,
+    "ms": 1173.5
+   }
+  },
+  {
+   "id": "b008",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "promotions",
+   "text_chars": 1512,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9559,
+    "probabilities": {
+     "primary": 0.0106,
+     "transactions": 0.011,
+     "updates": 0.0225,
+     "promotions": 0.9559
+    },
+    "tokens": 759,
+    "ms": 1170.9
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.9528,
+    "probabilities": {
+     "primary": 0.0085,
+     "transactions": 0.0108,
+     "updates": 0.0204,
+     "promotions": 0.9528,
+     "c1": 0.0038,
+     "c2": 0.0038
+    },
+    "tokens": 858,
+    "ms": 1218.0
+   }
+  },
+  {
+   "id": "b009",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "primary",
+   "guess": "primary",
+   "text_chars": 617,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.9772,
+    "probabilities": {
+     "primary": 0.9772,
+     "transactions": 0.0054,
+     "updates": 0.0114,
+     "promotions": 0.0061
+    },
+    "tokens": 551,
+    "ms": 878.2
+   },
+   "custom": {
+    "choice": "primary",
+    "confidence": 0.8946,
+    "probabilities": {
+     "primary": 0.8946,
+     "transactions": 0.0094,
+     "updates": 0.0193,
+     "promotions": 0.011,
+     "c1": 0.055,
+     "c2": 0.0107
+    },
+    "tokens": 650,
+    "ms": 998.0
+   }
+  },
+  {
+   "id": "b010",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "c2",
+   "guess": "transactions",
+   "text_chars": 940,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9463,
+    "probabilities": {
+     "primary": 0.0187,
+     "transactions": 0.9463,
+     "updates": 0.0137,
+     "promotions": 0.0212
+    },
+    "tokens": 693,
+    "ms": 1073.1
+   },
+   "custom": {
+    "choice": "c2",
+    "confidence": 0.8512,
+    "probabilities": {
+     "primary": 0.0131,
+     "transactions": 0.1117,
+     "updates": 0.0076,
+     "promotions": 0.0095,
+     "c1": 0.0069,
+     "c2": 0.8512
+    },
+    "tokens": 792,
+    "ms": 1100.7
+   }
+  },
+  {
+   "id": "b011",
+   "gold": "updates",
+   "accept": [
+    "primary"
+   ],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 1257,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.8279,
+    "probabilities": {
+     "primary": 0.1514,
+     "transactions": 0.0127,
+     "updates": 0.8279,
+     "promotions": 0.0081
+    },
+    "tokens": 754,
+    "ms": 1170.5
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.7889,
+    "probabilities": {
+     "primary": 0.1713,
+     "transactions": 0.0128,
+     "updates": 0.7889,
+     "promotions": 0.0077,
+     "c1": 0.0116,
+     "c2": 0.0077
+    },
+    "tokens": 853,
+    "ms": 1211.0
+   }
+  },
+  {
+   "id": "b012",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "promotions",
+   "text_chars": 1513,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9788,
+    "probabilities": {
+     "primary": 0.0065,
+     "transactions": 0.007,
+     "updates": 0.0077,
+     "promotions": 0.9788
+    },
+    "tokens": 802,
+    "ms": 1097.6
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.9714,
+    "probabilities": {
+     "primary": 0.0064,
+     "transactions": 0.0073,
+     "updates": 0.0085,
+     "promotions": 0.9714,
+     "c1": 0.0032,
+     "c2": 0.003
+    },
+    "tokens": 901,
+    "ms": 1215.6
+   }
+  },
+  {
+   "id": "b013",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "primary",
+   "guess": "primary",
+   "text_chars": 480,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.9457,
+    "probabilities": {
+     "primary": 0.9457,
+     "transactions": 0.0355,
+     "updates": 0.0144,
+     "promotions": 0.0044
+    },
+    "tokens": 466,
+    "ms": 865.1
+   },
+   "custom": {
+    "choice": "primary",
+    "confidence": 0.9281,
+    "probabilities": {
+     "primary": 0.9281,
+     "transactions": 0.0346,
+     "updates": 0.0149,
+     "promotions": 0.0053,
+     "c1": 0.0111,
+     "c2": 0.006
+    },
+    "tokens": 565,
+    "ms": 911.1
+   }
+  },
+  {
+   "id": "b014",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "primary",
+   "text_chars": 1181,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.897,
+    "probabilities": {
+     "primary": 0.0376,
+     "transactions": 0.897,
+     "updates": 0.0284,
+     "promotions": 0.037
+    },
+    "tokens": 740,
+    "ms": 1132.4
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.8478,
+    "probabilities": {
+     "primary": 0.0334,
+     "transactions": 0.8478,
+     "updates": 0.0299,
+     "promotions": 0.0361,
+     "c1": 0.0155,
+     "c2": 0.0372
+    },
+    "tokens": 839,
+    "ms": 1200.1
+   }
+  },
+  {
+   "id": "b015",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 1558,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9664,
+    "probabilities": {
+     "primary": 0.0098,
+     "transactions": 0.0092,
+     "updates": 0.9664,
+     "promotions": 0.0147
+    },
+    "tokens": 708,
+    "ms": 1093.2
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.9595,
+    "probabilities": {
+     "primary": 0.0086,
+     "transactions": 0.0076,
+     "updates": 0.9595,
+     "promotions": 0.013,
+     "c1": 0.0054,
+     "c2": 0.0059
+    },
+    "tokens": 807,
+    "ms": 1113.8
+   }
+  },
+  {
+   "id": "b016",
+   "gold": "promotions",
+   "accept": [
+    "updates"
+   ],
+   "gold_custom": "promotions",
+   "guess": "updates",
+   "text_chars": 1360,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.8837,
+    "probabilities": {
+     "primary": 0.0293,
+     "transactions": 0.0259,
+     "updates": 0.0611,
+     "promotions": 0.8837
+    },
+    "tokens": 766,
+    "ms": 1187.2
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.8777,
+    "probabilities": {
+     "primary": 0.0249,
+     "transactions": 0.0245,
+     "updates": 0.0597,
+     "promotions": 0.8777,
+     "c1": 0.0069,
+     "c2": 0.0063
+    },
+    "tokens": 865,
+    "ms": 1226.9
+   }
+  },
+  {
+   "id": "b017",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "c2",
+   "guess": "transactions",
+   "text_chars": 1060,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.7738,
+    "probabilities": {
+     "primary": 0.7738,
+     "transactions": 0.1366,
+     "updates": 0.0597,
+     "promotions": 0.03
+    },
+    "tokens": 694,
+    "ms": 1066.2
+   },
+   "custom": {
+    "choice": "c2",
+    "confidence": 0.9463,
+    "probabilities": {
+     "primary": 0.0211,
+     "transactions": 0.0104,
+     "updates": 0.008,
+     "promotions": 0.0064,
+     "c1": 0.0078,
+     "c2": 0.9463
+    },
+    "tokens": 793,
+    "ms": 1086.9
+   }
+  },
+  {
+   "id": "b018",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "c1",
+   "guess": "transactions",
+   "text_chars": 922,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9589,
+    "probabilities": {
+     "primary": 0.015,
+     "transactions": 0.9589,
+     "updates": 0.0128,
+     "promotions": 0.0133
+    },
+    "tokens": 654,
+    "ms": 1009.0
+   },
+   "custom": {
+    "choice": "c1",
+    "confidence": 0.9403,
+    "probabilities": {
+     "primary": 0.0056,
+     "transactions": 0.0413,
+     "updates": 0.0045,
+     "promotions": 0.0038,
+     "c1": 0.9403,
+     "c2": 0.0045
+    },
+    "tokens": 753,
+    "ms": 1152.3
+   }
+  },
+  {
+   "id": "b019",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 825,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9453,
+    "probabilities": {
+     "primary": 0.0378,
+     "transactions": 0.0079,
+     "updates": 0.9453,
+     "promotions": 0.009
+    },
+    "tokens": 578,
+    "ms": 919.5
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.9268,
+    "probabilities": {
+     "primary": 0.0338,
+     "transactions": 0.008,
+     "updates": 0.9268,
+     "promotions": 0.0105,
+     "c1": 0.0081,
+     "c2": 0.0128
+    },
+    "tokens": 677,
+    "ms": 1038.6
+   }
+  },
+  {
+   "id": "b020",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "c2",
+   "guess": "promotions",
+   "text_chars": 1383,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9577,
+    "probabilities": {
+     "primary": 0.0132,
+     "transactions": 0.0106,
+     "updates": 0.0184,
+     "promotions": 0.9577
+    },
+    "tokens": 755,
+    "ms": 1183.9
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.7967,
+    "probabilities": {
+     "primary": 0.019,
+     "transactions": 0.0153,
+     "updates": 0.0264,
+     "promotions": 0.7967,
+     "c1": 0.0083,
+     "c2": 0.1342
+    },
+    "tokens": 854,
+    "ms": 1224.6
+   }
+  },
+  {
+   "id": "b021",
+   "gold": "primary",
+   "accept": [
+    "transactions"
+   ],
+   "gold_custom": "primary",
+   "guess": "updates",
+   "text_chars": 806,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.6655,
+    "probabilities": {
+     "primary": 0.0959,
+     "transactions": 0.6655,
+     "updates": 0.2144,
+     "promotions": 0.0242
+    },
+    "tokens": 560,
+    "ms": 893.4
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.6052,
+    "probabilities": {
+     "primary": 0.1146,
+     "transactions": 0.6052,
+     "updates": 0.2407,
+     "promotions": 0.0285,
+     "c1": 0.0067,
+     "c2": 0.0042
+    },
+    "tokens": 659,
+    "ms": 1011.9
+   }
+  },
+  {
+   "id": "b022",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "updates",
+   "text_chars": 888,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9723,
+    "probabilities": {
+     "primary": 0.0079,
+     "transactions": 0.9723,
+     "updates": 0.0068,
+     "promotions": 0.013
+    },
+    "tokens": 673,
+    "ms": 1036.8
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.9644,
+    "probabilities": {
+     "primary": 0.0071,
+     "transactions": 0.9644,
+     "updates": 0.0063,
+     "promotions": 0.0129,
+     "c1": 0.0042,
+     "c2": 0.0051
+    },
+    "tokens": 772,
+    "ms": 1081.2
+   }
+  },
+  {
+   "id": "b023",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "c1",
+   "guess": "updates",
+   "text_chars": 1716,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9437,
+    "probabilities": {
+     "primary": 0.0225,
+     "transactions": 0.015,
+     "updates": 0.9437,
+     "promotions": 0.0187
+    },
+    "tokens": 793,
+    "ms": 1094.3
+   },
+   "custom": {
+    "choice": "c1",
+    "confidence": 0.9634,
+    "probabilities": {
+     "primary": 0.0063,
+     "transactions": 0.0049,
+     "updates": 0.0159,
+     "promotions": 0.0046,
+     "c1": 0.9634,
+     "c2": 0.0048
+    },
+    "tokens": 892,
+    "ms": 1259.8
+   }
+  },
+  {
+   "id": "b024",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "updates",
+   "text_chars": 1239,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.7582,
+    "probabilities": {
+     "primary": 0.0415,
+     "transactions": 0.1381,
+     "updates": 0.0622,
+     "promotions": 0.7582
+    },
+    "tokens": 713,
+    "ms": 1125.5
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.7608,
+    "probabilities": {
+     "primary": 0.04,
+     "transactions": 0.1302,
+     "updates": 0.0564,
+     "promotions": 0.7608,
+     "c1": 0.0062,
+     "c2": 0.0064
+    },
+    "tokens": 812,
+    "ms": 1122.2
+   }
+  },
+  {
+   "id": "b025",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "primary",
+   "guess": "primary",
+   "text_chars": 618,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.8128,
+    "probabilities": {
+     "primary": 0.8128,
+     "transactions": 0.0193,
+     "updates": 0.1424,
+     "promotions": 0.0255
+    },
+    "tokens": 504,
+    "ms": 882.4
+   },
+   "custom": {
+    "choice": "primary",
+    "confidence": 0.7937,
+    "probabilities": {
+     "primary": 0.7937,
+     "transactions": 0.017,
+     "updates": 0.1316,
+     "promotions": 0.0272,
+     "c1": 0.0199,
+     "c2": 0.0106
+    },
+    "tokens": 603,
+    "ms": 927.8
+   }
+  },
+  {
+   "id": "b026",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "c2",
+   "guess": "transactions",
+   "text_chars": 1175,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9146,
+    "probabilities": {
+     "primary": 0.0274,
+     "transactions": 0.9146,
+     "updates": 0.025,
+     "promotions": 0.0331
+    },
+    "tokens": 779,
+    "ms": 1083.2
+   },
+   "custom": {
+    "choice": "c2",
+    "confidence": 0.8745,
+    "probabilities": {
+     "primary": 0.0173,
+     "transactions": 0.0718,
+     "updates": 0.0129,
+     "promotions": 0.0125,
+     "c1": 0.011,
+     "c2": 0.8745
+    },
+    "tokens": 878,
+    "ms": 1237.3
+   }
+  },
+  {
+   "id": "b027",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 1868,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9685,
+    "probabilities": {
+     "primary": 0.0106,
+     "transactions": 0.0085,
+     "updates": 0.9685,
+     "promotions": 0.0124
+    },
+    "tokens": 718,
+    "ms": 1109.6
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.9633,
+    "probabilities": {
+     "primary": 0.0111,
+     "transactions": 0.0064,
+     "updates": 0.9633,
+     "promotions": 0.01,
+     "c1": 0.0044,
+     "c2": 0.0047
+    },
+    "tokens": 817,
+    "ms": 1129.4
+   }
+  },
+  {
+   "id": "b028",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "promotions",
+   "text_chars": 1284,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9715,
+    "probabilities": {
+     "primary": 0.0077,
+     "transactions": 0.0074,
+     "updates": 0.0134,
+     "promotions": 0.9715
+    },
+    "tokens": 749,
+    "ms": 1178.3
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.9697,
+    "probabilities": {
+     "primary": 0.0059,
+     "transactions": 0.0065,
+     "updates": 0.0116,
+     "promotions": 0.9697,
+     "c1": 0.0032,
+     "c2": 0.003
+    },
+    "tokens": 848,
+    "ms": 1192.3
+   }
+  },
+  {
+   "id": "b029",
+   "gold": "primary",
+   "accept": [
+    "updates"
+   ],
+   "gold_custom": "c1",
+   "guess": "updates",
+   "text_chars": 1035,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.8177,
+    "probabilities": {
+     "primary": 0.0936,
+     "transactions": 0.0432,
+     "updates": 0.8177,
+     "promotions": 0.0456
+    },
+    "tokens": 643,
+    "ms": 1002.8
+   },
+   "custom": {
+    "choice": "c1",
+    "confidence": 0.9688,
+    "probabilities": {
+     "primary": 0.007,
+     "transactions": 0.0053,
+     "updates": 0.0079,
+     "promotions": 0.0051,
+     "c1": 0.9688,
+     "c2": 0.0058
+    },
+    "tokens": 742,
+    "ms": 1150.0
+   }
+  },
+  {
+   "id": "b030",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "updates",
+   "text_chars": 1336,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9548,
+    "probabilities": {
+     "primary": 0.0144,
+     "transactions": 0.9548,
+     "updates": 0.0174,
+     "promotions": 0.0135
+    },
+    "tokens": 723,
+    "ms": 1122.7
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.9343,
+    "probabilities": {
+     "primary": 0.015,
+     "transactions": 0.9343,
+     "updates": 0.017,
+     "promotions": 0.015,
+     "c1": 0.0097,
+     "c2": 0.0091
+    },
+    "tokens": 822,
+    "ms": 1146.2
+   }
+  },
+  {
+   "id": "b031",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 893,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9442,
+    "probabilities": {
+     "primary": 0.0157,
+     "transactions": 0.0115,
+     "updates": 0.9442,
+     "promotions": 0.0285
+    },
+    "tokens": 566,
+    "ms": 897.5
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.9287,
+    "probabilities": {
+     "primary": 0.0162,
+     "transactions": 0.0108,
+     "updates": 0.9287,
+     "promotions": 0.0299,
+     "c1": 0.0074,
+     "c2": 0.007
+    },
+    "tokens": 665,
+    "ms": 1023.5
+   }
+  },
+  {
+   "id": "b032",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "promotions",
+   "text_chars": 1294,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9265,
+    "probabilities": {
+     "primary": 0.0225,
+     "transactions": 0.0263,
+     "updates": 0.0247,
+     "promotions": 0.9265
+    },
+    "tokens": 683,
+    "ms": 1048.8
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.9134,
+    "probabilities": {
+     "primary": 0.0193,
+     "transactions": 0.028,
+     "updates": 0.0263,
+     "promotions": 0.9134,
+     "c1": 0.0071,
+     "c2": 0.0059
+    },
+    "tokens": 782,
+    "ms": 1089.1
+   }
+  },
+  {
+   "id": "b033",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "primary",
+   "guess": "primary",
+   "text_chars": 256,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.9515,
+    "probabilities": {
+     "primary": 0.9515,
+     "transactions": 0.0165,
+     "updates": 0.0165,
+     "promotions": 0.0155
+    },
+    "tokens": 410,
+    "ms": 800.1
+   },
+   "custom": {
+    "choice": "primary",
+    "confidence": 0.8954,
+    "probabilities": {
+     "primary": 0.8954,
+     "transactions": 0.0175,
+     "updates": 0.0175,
+     "promotions": 0.0154,
+     "c1": 0.0297,
+     "c2": 0.0246
+    },
+    "tokens": 509,
+    "ms": 883.0
+   }
+  },
+  {
+   "id": "b034",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "transactions",
+   "text_chars": 889,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.958,
+    "probabilities": {
+     "primary": 0.0112,
+     "transactions": 0.958,
+     "updates": 0.0159,
+     "promotions": 0.0149
+    },
+    "tokens": 661,
+    "ms": 1012.5
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.9407,
+    "probabilities": {
+     "primary": 0.0125,
+     "transactions": 0.9407,
+     "updates": 0.0166,
+     "promotions": 0.0146,
+     "c1": 0.0078,
+     "c2": 0.0078
+    },
+    "tokens": 760,
+    "ms": 1151.0
+   }
+  },
+  {
+   "id": "b035",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 1218,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9438,
+    "probabilities": {
+     "primary": 0.0287,
+     "transactions": 0.0116,
+     "updates": 0.9438,
+     "promotions": 0.0159
+    },
+    "tokens": 723,
+    "ms": 1114.7
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.9455,
+    "probabilities": {
+     "primary": 0.0272,
+     "transactions": 0.006,
+     "updates": 0.9455,
+     "promotions": 0.0107,
+     "c1": 0.0064,
+     "c2": 0.0042
+    },
+    "tokens": 822,
+    "ms": 1128.6
+   }
+  },
+  {
+   "id": "b036",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "promotions",
+   "text_chars": 1265,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9752,
+    "probabilities": {
+     "primary": 0.0065,
+     "transactions": 0.0071,
+     "updates": 0.0112,
+     "promotions": 0.9752
+    },
+    "tokens": 754,
+    "ms": 1155.7
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.9716,
+    "probabilities": {
+     "primary": 0.0053,
+     "transactions": 0.007,
+     "updates": 0.0102,
+     "promotions": 0.9716,
+     "c1": 0.003,
+     "c2": 0.0028
+    },
+    "tokens": 853,
+    "ms": 1240.4
+   }
+  },
+  {
+   "id": "b037",
+   "gold": "primary",
+   "accept": [
+    "transactions"
+   ],
+   "gold_custom": "c2",
+   "guess": "primary",
+   "text_chars": 843,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.5733,
+    "probabilities": {
+     "primary": 0.3166,
+     "transactions": 0.5733,
+     "updates": 0.0718,
+     "promotions": 0.0384
+    },
+    "tokens": 642,
+    "ms": 996.1
+   },
+   "custom": {
+    "choice": "c2",
+    "confidence": 0.9734,
+    "probabilities": {
+     "primary": 0.007,
+     "transactions": 0.0068,
+     "updates": 0.0041,
+     "promotions": 0.0044,
+     "c1": 0.0044,
+     "c2": 0.9734
+    },
+    "tokens": 741,
+    "ms": 1157.8
+   }
+  },
+  {
+   "id": "b038",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "c1",
+   "guess": "transactions",
+   "text_chars": 828,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.945,
+    "probabilities": {
+     "primary": 0.0176,
+     "transactions": 0.945,
+     "updates": 0.0181,
+     "promotions": 0.0193
+    },
+    "tokens": 604,
+    "ms": 941.0
+   },
+   "custom": {
+    "choice": "c1",
+    "confidence": 0.9454,
+    "probabilities": {
+     "primary": 0.0063,
+     "transactions": 0.0304,
+     "updates": 0.0067,
+     "promotions": 0.0052,
+     "c1": 0.9454,
+     "c2": 0.0061
+    },
+    "tokens": 703,
+    "ms": 1091.1
+   }
+  },
+  {
+   "id": "b039",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 1288,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.8994,
+    "probabilities": {
+     "primary": 0.0325,
+     "transactions": 0.0346,
+     "updates": 0.8994,
+     "promotions": 0.0335
+    },
+    "tokens": 650,
+    "ms": 989.9
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.8825,
+    "probabilities": {
+     "primary": 0.0297,
+     "transactions": 0.0275,
+     "updates": 0.8825,
+     "promotions": 0.0284,
+     "c1": 0.0167,
+     "c2": 0.0152
+    },
+    "tokens": 749,
+    "ms": 1146.9
+   }
+  },
+  {
+   "id": "b040",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "promotions",
+   "text_chars": 1214,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9778,
+    "probabilities": {
+     "primary": 0.0062,
+     "transactions": 0.0064,
+     "updates": 0.0096,
+     "promotions": 0.9778
+    },
+    "tokens": 763,
+    "ms": 1190.3
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.9695,
+    "probabilities": {
+     "primary": 0.0055,
+     "transactions": 0.0062,
+     "updates": 0.01,
+     "promotions": 0.9695,
+     "c1": 0.0038,
+     "c2": 0.005
+    },
+    "tokens": 862,
+    "ms": 1243.6
+   }
+  },
+  {
+   "id": "b041",
+   "gold": "primary",
+   "accept": [
+    "updates"
+   ],
+   "gold_custom": "primary",
+   "guess": "updates",
+   "text_chars": 591,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.6734,
+    "probabilities": {
+     "primary": 0.3119,
+     "transactions": 0.0075,
+     "updates": 0.6734,
+     "promotions": 0.0073
+    },
+    "tokens": 528,
+    "ms": 860.8
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.4445,
+    "probabilities": {
+     "primary": 0.3356,
+     "transactions": 0.0079,
+     "updates": 0.4445,
+     "promotions": 0.006,
+     "c1": 0.0645,
+     "c2": 0.1415
+    },
+    "tokens": 627,
+    "ms": 947.1
+   }
+  },
+  {
+   "id": "b042",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "transactions",
+   "text_chars": 855,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.8998,
+    "probabilities": {
+     "primary": 0.0296,
+     "transactions": 0.8998,
+     "updates": 0.038,
+     "promotions": 0.0325
+    },
+    "tokens": 592,
+    "ms": 933.2
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.8865,
+    "probabilities": {
+     "primary": 0.0255,
+     "transactions": 0.8865,
+     "updates": 0.0313,
+     "promotions": 0.0318,
+     "c1": 0.0128,
+     "c2": 0.0121
+    },
+    "tokens": 691,
+    "ms": 1052.0
+   }
+  },
+  {
+   "id": "b043",
+   "gold": "updates",
+   "accept": [
+    "transactions"
+   ],
+   "gold_custom": "c2",
+   "guess": "transactions",
+   "text_chars": 811,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.4748,
+    "probabilities": {
+     "primary": 0.1093,
+     "transactions": 0.342,
+     "updates": 0.4748,
+     "promotions": 0.074
+    },
+    "tokens": 656,
+    "ms": 1009.2
+   },
+   "custom": {
+    "choice": "c2",
+    "confidence": 0.9504,
+    "probabilities": {
+     "primary": 0.0116,
+     "transactions": 0.0123,
+     "updates": 0.0109,
+     "promotions": 0.0077,
+     "c1": 0.007,
+     "c2": 0.9504
+    },
+    "tokens": 755,
+    "ms": 1180.4
+   }
+  },
+  {
+   "id": "b044",
+   "gold": "promotions",
+   "accept": [
+    "updates"
+   ],
+   "gold_custom": "c1",
+   "guess": "promotions",
+   "text_chars": 1286,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.498,
+    "probabilities": {
+     "primary": 0.0342,
+     "transactions": 0.018,
+     "updates": 0.4499,
+     "promotions": 0.498
+    },
+    "tokens": 737,
+    "ms": 1149.8
+   },
+   "custom": {
+    "choice": "c1",
+    "confidence": 0.971,
+    "probabilities": {
+     "primary": 0.0052,
+     "transactions": 0.004,
+     "updates": 0.0062,
+     "promotions": 0.0088,
+     "c1": 0.971,
+     "c2": 0.0047
+    },
+    "tokens": 836,
+    "ms": 1173.5
+   }
+  },
+  {
+   "id": "b045",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "primary",
+   "guess": "primary",
+   "text_chars": 555,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.708,
+    "probabilities": {
+     "primary": 0.708,
+     "transactions": 0.2326,
+     "updates": 0.0311,
+     "promotions": 0.0283
+    },
+    "tokens": 526,
+    "ms": 862.3
+   },
+   "custom": {
+    "choice": "primary",
+    "confidence": 0.7222,
+    "probabilities": {
+     "primary": 0.7222,
+     "transactions": 0.1624,
+     "updates": 0.0357,
+     "promotions": 0.0325,
+     "c1": 0.034,
+     "c2": 0.0131
+    },
+    "tokens": 625,
+    "ms": 955.2
+   }
+  },
+  {
+   "id": "b046",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "transactions",
+   "text_chars": 795,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9324,
+    "probabilities": {
+     "primary": 0.0224,
+     "transactions": 0.9324,
+     "updates": 0.0271,
+     "promotions": 0.018
+    },
+    "tokens": 610,
+    "ms": 939.8
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.9011,
+    "probabilities": {
+     "primary": 0.0233,
+     "transactions": 0.9011,
+     "updates": 0.029,
+     "promotions": 0.0196,
+     "c1": 0.0123,
+     "c2": 0.0148
+    },
+    "tokens": 709,
+    "ms": 1119.4
+   }
+  },
+  {
+   "id": "b047",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 1511,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9792,
+    "probabilities": {
+     "primary": 0.0054,
+     "transactions": 0.0061,
+     "updates": 0.9792,
+     "promotions": 0.0092
+    },
+    "tokens": 718,
+    "ms": 1112.0
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.9782,
+    "probabilities": {
+     "primary": 0.0047,
+     "transactions": 0.0046,
+     "updates": 0.9782,
+     "promotions": 0.0066,
+     "c1": 0.0028,
+     "c2": 0.0031
+    },
+    "tokens": 817,
+    "ms": 1129.0
+   }
+  },
+  {
+   "id": "b048",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "promotions",
+   "text_chars": 1219,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9593,
+    "probabilities": {
+     "primary": 0.0102,
+     "transactions": 0.0079,
+     "updates": 0.0226,
+     "promotions": 0.9593
+    },
+    "tokens": 678,
+    "ms": 1044.0
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.9461,
+    "probabilities": {
+     "primary": 0.0084,
+     "transactions": 0.0075,
+     "updates": 0.0264,
+     "promotions": 0.9461,
+     "c1": 0.0056,
+     "c2": 0.006
+    },
+    "tokens": 777,
+    "ms": 1077.7
+   }
+  },
+  {
+   "id": "b049",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "primary",
+   "guess": "primary",
+   "text_chars": 322,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.9627,
+    "probabilities": {
+     "primary": 0.9627,
+     "transactions": 0.007,
+     "updates": 0.0249,
+     "promotions": 0.0055
+    },
+    "tokens": 436,
+    "ms": 829.4
+   },
+   "custom": {
+    "choice": "primary",
+    "confidence": 0.9363,
+    "probabilities": {
+     "primary": 0.9363,
+     "transactions": 0.0076,
+     "updates": 0.0311,
+     "promotions": 0.0059,
+     "c1": 0.0134,
+     "c2": 0.0057
+    },
+    "tokens": 535,
+    "ms": 867.5
+   }
+  },
+  {
+   "id": "b050",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "transactions",
+   "text_chars": 868,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9685,
+    "probabilities": {
+     "primary": 0.0085,
+     "transactions": 0.9685,
+     "updates": 0.0106,
+     "promotions": 0.0124
+    },
+    "tokens": 645,
+    "ms": 997.0
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.9592,
+    "probabilities": {
+     "primary": 0.0086,
+     "transactions": 0.9592,
+     "updates": 0.0097,
+     "promotions": 0.0113,
+     "c1": 0.0057,
+     "c2": 0.0055
+    },
+    "tokens": 744,
+    "ms": 1137.6
+   }
+  },
+  {
+   "id": "b051",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 1815,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9649,
+    "probabilities": {
+     "primary": 0.012,
+     "transactions": 0.0112,
+     "updates": 0.9649,
+     "promotions": 0.012
+    },
+    "tokens": 797,
+    "ms": 1105.4
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.9583,
+    "probabilities": {
+     "primary": 0.0115,
+     "transactions": 0.0087,
+     "updates": 0.9583,
+     "promotions": 0.009,
+     "c1": 0.0068,
+     "c2": 0.0058
+    },
+    "tokens": 896,
+    "ms": 1251.0
+   }
+  },
+  {
+   "id": "b052",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "promotions",
+   "text_chars": 1228,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9808,
+    "probabilities": {
+     "primary": 0.0051,
+     "transactions": 0.006,
+     "updates": 0.0082,
+     "promotions": 0.9808
+    },
+    "tokens": 783,
+    "ms": 1079.2
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.9767,
+    "probabilities": {
+     "primary": 0.0043,
+     "transactions": 0.0059,
+     "updates": 0.0076,
+     "promotions": 0.9767,
+     "c1": 0.0029,
+     "c2": 0.0026
+    },
+    "tokens": 882,
+    "ms": 1242.0
+   }
+  },
+  {
+   "id": "b053",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "primary",
+   "guess": "transactions",
+   "text_chars": 867,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.6984,
+    "probabilities": {
+     "primary": 0.6984,
+     "transactions": 0.1038,
+     "updates": 0.1499,
+     "promotions": 0.0479
+    },
+    "tokens": 600,
+    "ms": 920.8
+   },
+   "custom": {
+    "choice": "primary",
+    "confidence": 0.7194,
+    "probabilities": {
+     "primary": 0.7194,
+     "transactions": 0.0951,
+     "updates": 0.0989,
+     "promotions": 0.0559,
+     "c1": 0.0179,
+     "c2": 0.0129
+    },
+    "tokens": 699,
+    "ms": 1078.1
+   }
+  },
+  {
+   "id": "b054",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "transactions",
+   "text_chars": 1051,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9788,
+    "probabilities": {
+     "primary": 0.0071,
+     "transactions": 0.9788,
+     "updates": 0.0067,
+     "promotions": 0.0074
+    },
+    "tokens": 787,
+    "ms": 1085.7
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.9736,
+    "probabilities": {
+     "primary": 0.0056,
+     "transactions": 0.9736,
+     "updates": 0.0059,
+     "promotions": 0.0069,
+     "c1": 0.0039,
+     "c2": 0.0041
+    },
+    "tokens": 886,
+    "ms": 1246.3
+   }
+  },
+  {
+   "id": "b055",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 622,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9104,
+    "probabilities": {
+     "primary": 0.0391,
+     "transactions": 0.0176,
+     "updates": 0.9104,
+     "promotions": 0.0329
+    },
+    "tokens": 502,
+    "ms": 882.8
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.9109,
+    "probabilities": {
+     "primary": 0.0314,
+     "transactions": 0.0139,
+     "updates": 0.9109,
+     "promotions": 0.0256,
+     "c1": 0.0099,
+     "c2": 0.0082
+    },
+    "tokens": 601,
+    "ms": 934.8
+   }
+  },
+  {
+   "id": "b056",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "promotions",
+   "text_chars": 1287,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9606,
+    "probabilities": {
+     "primary": 0.0114,
+     "transactions": 0.0107,
+     "updates": 0.0173,
+     "promotions": 0.9606
+    },
+    "tokens": 670,
+    "ms": 1029.6
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.9511,
+    "probabilities": {
+     "primary": 0.0112,
+     "transactions": 0.0102,
+     "updates": 0.0184,
+     "promotions": 0.9511,
+     "c1": 0.0047,
+     "c2": 0.0045
+    },
+    "tokens": 769,
+    "ms": 1067.4
+   }
+  },
+  {
+   "id": "b057",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "primary",
+   "guess": "primary",
+   "text_chars": 539,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.7851,
+    "probabilities": {
+     "primary": 0.7851,
+     "transactions": 0.0145,
+     "updates": 0.1233,
+     "promotions": 0.0771
+    },
+    "tokens": 515,
+    "ms": 857.0
+   },
+   "custom": {
+    "choice": "primary",
+    "confidence": 0.6966,
+    "probabilities": {
+     "primary": 0.6966,
+     "transactions": 0.022,
+     "updates": 0.123,
+     "promotions": 0.0958,
+     "c1": 0.0352,
+     "c2": 0.0274
+    },
+    "tokens": 614,
+    "ms": 936.3
+   }
+  },
+  {
+   "id": "b058",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "updates",
+   "text_chars": 618,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9288,
+    "probabilities": {
+     "primary": 0.0249,
+     "transactions": 0.9288,
+     "updates": 0.0213,
+     "promotions": 0.0249
+    },
+    "tokens": 602,
+    "ms": 934.5
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.8579,
+    "probabilities": {
+     "primary": 0.0289,
+     "transactions": 0.8579,
+     "updates": 0.0255,
+     "promotions": 0.0285,
+     "c1": 0.0145,
+     "c2": 0.0448
+    },
+    "tokens": 701,
+    "ms": 1088.1
+   }
+  },
+  {
+   "id": "b059",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 592,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9616,
+    "probabilities": {
+     "primary": 0.0142,
+     "transactions": 0.0117,
+     "updates": 0.9616,
+     "promotions": 0.0125
+    },
+    "tokens": 522,
+    "ms": 859.7
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.9564,
+    "probabilities": {
+     "primary": 0.0122,
+     "transactions": 0.0095,
+     "updates": 0.9564,
+     "promotions": 0.0105,
+     "c1": 0.0056,
+     "c2": 0.0058
+    },
+    "tokens": 621,
+    "ms": 945.5
+   }
+  },
+  {
+   "id": "b060",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "updates",
+   "text_chars": 1230,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9628,
+    "probabilities": {
+     "primary": 0.0082,
+     "transactions": 0.0096,
+     "updates": 0.0194,
+     "promotions": 0.9628
+    },
+    "tokens": 711,
+    "ms": 1121.1
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.9543,
+    "probabilities": {
+     "primary": 0.0076,
+     "transactions": 0.0104,
+     "updates": 0.0201,
+     "promotions": 0.9543,
+     "c1": 0.0037,
+     "c2": 0.0038
+    },
+    "tokens": 810,
+    "ms": 1116.7
+   }
+  },
+  {
+   "id": "c001",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "transactions",
+   "text_chars": 1212,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9779,
+    "probabilities": {
+     "primary": 0.0066,
+     "transactions": 0.9779,
+     "updates": 0.007,
+     "promotions": 0.0085
+    },
+    "tokens": 775,
+    "ms": 1071.3
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.9712,
+    "probabilities": {
+     "primary": 0.0058,
+     "transactions": 0.9712,
+     "updates": 0.0066,
+     "promotions": 0.008,
+     "c1": 0.0043,
+     "c2": 0.0041
+    },
+    "tokens": 874,
+    "ms": 1213.8
+   }
+  },
+  {
+   "id": "c002",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "primary",
+   "guess": "primary",
+   "text_chars": 380,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.9473,
+    "probabilities": {
+     "primary": 0.9473,
+     "transactions": 0.0192,
+     "updates": 0.018,
+     "promotions": 0.0154
+    },
+    "tokens": 437,
+    "ms": 828.7
+   },
+   "custom": {
+    "choice": "primary",
+    "confidence": 0.9262,
+    "probabilities": {
+     "primary": 0.9262,
+     "transactions": 0.0152,
+     "updates": 0.0138,
+     "promotions": 0.0126,
+     "c1": 0.0195,
+     "c2": 0.0126
+    },
+    "tokens": 536,
+    "ms": 864.1
+   }
+  },
+  {
+   "id": "c003",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 2154,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9784,
+    "probabilities": {
+     "primary": 0.0062,
+     "transactions": 0.0069,
+     "updates": 0.9784,
+     "promotions": 0.0085
+    },
+    "tokens": 737,
+    "ms": 1146.7
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.9771,
+    "probabilities": {
+     "primary": 0.005,
+     "transactions": 0.0047,
+     "updates": 0.9771,
+     "promotions": 0.0064,
+     "c1": 0.0031,
+     "c2": 0.0037
+    },
+    "tokens": 836,
+    "ms": 1187.2
+   }
+  },
+  {
+   "id": "c004",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "promotions",
+   "text_chars": 1449,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9493,
+    "probabilities": {
+     "primary": 0.0102,
+     "transactions": 0.0109,
+     "updates": 0.0296,
+     "promotions": 0.9493
+    },
+    "tokens": 787,
+    "ms": 1086.5
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.947,
+    "probabilities": {
+     "primary": 0.0083,
+     "transactions": 0.01,
+     "updates": 0.0247,
+     "promotions": 0.947,
+     "c1": 0.005,
+     "c2": 0.0052
+    },
+    "tokens": 886,
+    "ms": 1259.3
+   }
+  },
+  {
+   "id": "c005",
+   "gold": "primary",
+   "accept": [
+    "updates"
+   ],
+   "gold_custom": "primary",
+   "guess": "updates",
+   "text_chars": 485,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.6327,
+    "probabilities": {
+     "primary": 0.193,
+     "transactions": 0.0933,
+     "updates": 0.6327,
+     "promotions": 0.0811
+    },
+    "tokens": 469,
+    "ms": 863.7
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.6288,
+    "probabilities": {
+     "primary": 0.1816,
+     "transactions": 0.0745,
+     "updates": 0.6288,
+     "promotions": 0.0858,
+     "c1": 0.0204,
+     "c2": 0.009
+    },
+    "tokens": 568,
+    "ms": 910.3
+   }
+  },
+  {
+   "id": "c006",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "updates",
+   "text_chars": 808,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9663,
+    "probabilities": {
+     "primary": 0.0118,
+     "transactions": 0.9663,
+     "updates": 0.0101,
+     "promotions": 0.0118
+    },
+    "tokens": 677,
+    "ms": 1025.2
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.9476,
+    "probabilities": {
+     "primary": 0.0109,
+     "transactions": 0.9476,
+     "updates": 0.0087,
+     "promotions": 0.0105,
+     "c1": 0.007,
+     "c2": 0.0153
+    },
+    "tokens": 776,
+    "ms": 1075.8
+   }
+  },
+  {
+   "id": "c007",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "c1",
+   "guess": "updates",
+   "text_chars": 1892,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9268,
+    "probabilities": {
+     "primary": 0.0359,
+     "transactions": 0.0192,
+     "updates": 0.9268,
+     "promotions": 0.0181
+    },
+    "tokens": 721,
+    "ms": 1131.9
+   },
+   "custom": {
+    "choice": "c1",
+    "confidence": 0.8686,
+    "probabilities": {
+     "primary": 0.0192,
+     "transactions": 0.0113,
+     "updates": 0.0783,
+     "promotions": 0.0109,
+     "c1": 0.8686,
+     "c2": 0.0116
+    },
+    "tokens": 820,
+    "ms": 1138.6
+   }
+  },
+  {
+   "id": "c008",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "updates",
+   "text_chars": 1370,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9381,
+    "probabilities": {
+     "primary": 0.0064,
+     "transactions": 0.0073,
+     "updates": 0.0482,
+     "promotions": 0.9381
+    },
+    "tokens": 741,
+    "ms": 1159.9
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.9391,
+    "probabilities": {
+     "primary": 0.0043,
+     "transactions": 0.0063,
+     "updates": 0.045,
+     "promotions": 0.9391,
+     "c1": 0.0027,
+     "c2": 0.0026
+    },
+    "tokens": 840,
+    "ms": 1191.8
+   }
+  },
+  {
+   "id": "c009",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "c2",
+   "guess": "transactions",
+   "text_chars": 1145,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.801,
+    "probabilities": {
+     "primary": 0.801,
+     "transactions": 0.1267,
+     "updates": 0.0512,
+     "promotions": 0.021
+    },
+    "tokens": 739,
+    "ms": 1148.1
+   },
+   "custom": {
+    "choice": "c2",
+    "confidence": 0.9509,
+    "probabilities": {
+     "primary": 0.019,
+     "transactions": 0.0105,
+     "updates": 0.0067,
+     "promotions": 0.0061,
+     "c1": 0.0069,
+     "c2": 0.9509
+    },
+    "tokens": 838,
+    "ms": 1200.7
+   }
+  },
+  {
+   "id": "c010",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "primary",
+   "text_chars": 744,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.7377,
+    "probabilities": {
+     "primary": 0.0802,
+     "transactions": 0.7377,
+     "updates": 0.1186,
+     "promotions": 0.0635
+    },
+    "tokens": 600,
+    "ms": 925.7
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.628,
+    "probabilities": {
+     "primary": 0.1208,
+     "transactions": 0.628,
+     "updates": 0.1527,
+     "promotions": 0.0617,
+     "c1": 0.0207,
+     "c2": 0.0161
+    },
+    "tokens": 699,
+    "ms": 1079.2
+   }
+  },
+  {
+   "id": "c011",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 687,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.8952,
+    "probabilities": {
+     "primary": 0.04,
+     "transactions": 0.0189,
+     "updates": 0.8952,
+     "promotions": 0.046
+    },
+    "tokens": 515,
+    "ms": 847.2
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.8876,
+    "probabilities": {
+     "primary": 0.0328,
+     "transactions": 0.016,
+     "updates": 0.8876,
+     "promotions": 0.0378,
+     "c1": 0.0137,
+     "c2": 0.0121
+    },
+    "tokens": 614,
+    "ms": 932.0
+   }
+  },
+  {
+   "id": "c012",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "updates",
+   "text_chars": 1276,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.7215,
+    "probabilities": {
+     "primary": 0.2235,
+     "transactions": 0.0043,
+     "updates": 0.0507,
+     "promotions": 0.7215
+    },
+    "tokens": 687,
+    "ms": 1048.0
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.6964,
+    "probabilities": {
+     "primary": 0.2333,
+     "transactions": 0.0061,
+     "updates": 0.0554,
+     "promotions": 0.6964,
+     "c1": 0.0061,
+     "c2": 0.0026
+    },
+    "tokens": 786,
+    "ms": 1090.0
+   }
+  },
+  {
+   "id": "c013",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "primary",
+   "guess": "primary",
+   "text_chars": 445,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.9088,
+    "probabilities": {
+     "primary": 0.9088,
+     "transactions": 0.0141,
+     "updates": 0.0614,
+     "promotions": 0.0158
+    },
+    "tokens": 459,
+    "ms": 859.0
+   },
+   "custom": {
+    "choice": "primary",
+    "confidence": 0.8866,
+    "probabilities": {
+     "primary": 0.8866,
+     "transactions": 0.0143,
+     "updates": 0.0585,
+     "promotions": 0.0178,
+     "c1": 0.0157,
+     "c2": 0.007
+    },
+    "tokens": 558,
+    "ms": 891.6
+   }
+  },
+  {
+   "id": "c014",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "transactions",
+   "text_chars": 1087,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.8803,
+    "probabilities": {
+     "primary": 0.0378,
+     "transactions": 0.8803,
+     "updates": 0.0442,
+     "promotions": 0.0378
+    },
+    "tokens": 656,
+    "ms": 993.7
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.855,
+    "probabilities": {
+     "primary": 0.0382,
+     "transactions": 0.855,
+     "updates": 0.0413,
+     "promotions": 0.04,
+     "c1": 0.0134,
+     "c2": 0.0122
+    },
+    "tokens": 755,
+    "ms": 1182.1
+   }
+  },
+  {
+   "id": "c015",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 919,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9306,
+    "probabilities": {
+     "primary": 0.0206,
+     "transactions": 0.0155,
+     "updates": 0.9306,
+     "promotions": 0.0334
+    },
+    "tokens": 571,
+    "ms": 912.7
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.9172,
+    "probabilities": {
+     "primary": 0.0209,
+     "transactions": 0.0141,
+     "updates": 0.9172,
+     "promotions": 0.0319,
+     "c1": 0.0083,
+     "c2": 0.0076
+    },
+    "tokens": 670,
+    "ms": 1017.1
+   }
+  },
+  {
+   "id": "c016",
+   "gold": "promotions",
+   "accept": [
+    "transactions"
+   ],
+   "gold_custom": "c2",
+   "guess": "updates",
+   "text_chars": 1474,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.5629,
+    "probabilities": {
+     "primary": 0.0421,
+     "transactions": 0.5629,
+     "updates": 0.0792,
+     "promotions": 0.3158
+    },
+    "tokens": 774,
+    "ms": 1078.3
+   },
+   "custom": {
+    "choice": "c2",
+    "confidence": 0.8052,
+    "probabilities": {
+     "primary": 0.0236,
+     "transactions": 0.0661,
+     "updates": 0.0317,
+     "promotions": 0.0602,
+     "c1": 0.0132,
+     "c2": 0.8052
+    },
+    "tokens": 873,
+    "ms": 1207.9
+   }
+  },
+  {
+   "id": "c017",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "c1",
+   "guess": "updates",
+   "text_chars": 790,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.4833,
+    "probabilities": {
+     "primary": 0.2587,
+     "transactions": 0.4833,
+     "updates": 0.2161,
+     "promotions": 0.0419
+    },
+    "tokens": 540,
+    "ms": 875.2
+   },
+   "custom": {
+    "choice": "c1",
+    "confidence": 0.9702,
+    "probabilities": {
+     "primary": 0.0067,
+     "transactions": 0.0067,
+     "updates": 0.0067,
+     "promotions": 0.0046,
+     "c1": 0.9702,
+     "c2": 0.0049
+    },
+    "tokens": 639,
+    "ms": 961.0
+   }
+  },
+  {
+   "id": "c018",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "updates",
+   "text_chars": 1205,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.7951,
+    "probabilities": {
+     "primary": 0.0421,
+     "transactions": 0.7951,
+     "updates": 0.0965,
+     "promotions": 0.0663
+    },
+    "tokens": 648,
+    "ms": 991.8
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.7379,
+    "probabilities": {
+     "primary": 0.0483,
+     "transactions": 0.7379,
+     "updates": 0.114,
+     "promotions": 0.0854,
+     "c1": 0.01,
+     "c2": 0.0043
+    },
+    "tokens": 747,
+    "ms": 1166.0
+   }
+  },
+  {
+   "id": "c019",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 1255,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.8491,
+    "probabilities": {
+     "primary": 0.0518,
+     "transactions": 0.0534,
+     "updates": 0.8491,
+     "promotions": 0.0457
+    },
+    "tokens": 793,
+    "ms": 1098.2
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.8311,
+    "probabilities": {
+     "primary": 0.0434,
+     "transactions": 0.0365,
+     "updates": 0.8311,
+     "promotions": 0.0469,
+     "c1": 0.0259,
+     "c2": 0.0162
+    },
+    "tokens": 892,
+    "ms": 1262.9
+   }
+  },
+  {
+   "id": "c020",
+   "gold": "promotions",
+   "accept": [
+    "updates"
+   ],
+   "gold_custom": "promotions",
+   "guess": "updates",
+   "text_chars": 1389,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.5378,
+    "probabilities": {
+     "primary": 0.0428,
+     "transactions": 0.0135,
+     "updates": 0.406,
+     "promotions": 0.5378
+    },
+    "tokens": 730,
+    "ms": 1154.4
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.5398,
+    "probabilities": {
+     "primary": 0.0457,
+     "transactions": 0.0085,
+     "updates": 0.5398,
+     "promotions": 0.3919,
+     "c1": 0.009,
+     "c2": 0.0051
+    },
+    "tokens": 829,
+    "ms": 1171.1
+   }
+  },
+  {
+   "id": "c021",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "primary",
+   "guess": "primary",
+   "text_chars": 939,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.8241,
+    "probabilities": {
+     "primary": 0.8241,
+     "transactions": 0.0139,
+     "updates": 0.1377,
+     "promotions": 0.0243
+    },
+    "tokens": 637,
+    "ms": 949.6
+   },
+   "custom": {
+    "choice": "primary",
+    "confidence": 0.733,
+    "probabilities": {
+     "primary": 0.733,
+     "transactions": 0.0186,
+     "updates": 0.1768,
+     "promotions": 0.0401,
+     "c1": 0.0186,
+     "c2": 0.0128
+    },
+    "tokens": 736,
+    "ms": 1137.5
+   }
+  },
+  {
+   "id": "c022",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "c2",
+   "guess": "transactions",
+   "text_chars": 1129,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.932,
+    "probabilities": {
+     "primary": 0.0248,
+     "transactions": 0.932,
+     "updates": 0.0179,
+     "promotions": 0.0252
+    },
+    "tokens": 701,
+    "ms": 1092.7
+   },
+   "custom": {
+    "choice": "c2",
+    "confidence": 0.873,
+    "probabilities": {
+     "primary": 0.0153,
+     "transactions": 0.0844,
+     "updates": 0.0087,
+     "promotions": 0.0107,
+     "c1": 0.0079,
+     "c2": 0.873
+    },
+    "tokens": 800,
+    "ms": 1097.7
+   }
+  },
+  {
+   "id": "c023",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 2255,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9769,
+    "probabilities": {
+     "primary": 0.0089,
+     "transactions": 0.0076,
+     "updates": 0.9769,
+     "promotions": 0.0067
+    },
+    "tokens": 699,
+    "ms": 1070.2
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.9747,
+    "probabilities": {
+     "primary": 0.0076,
+     "transactions": 0.0055,
+     "updates": 0.9747,
+     "promotions": 0.005,
+     "c1": 0.0035,
+     "c2": 0.0037
+    },
+    "tokens": 798,
+    "ms": 1106.0
+   }
+  },
+  {
+   "id": "c024",
+   "gold": "promotions",
+   "accept": [
+    "promotions"
+   ],
+   "gold_custom": "c1",
+   "guess": "promotions",
+   "text_chars": 1259,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.8638,
+    "probabilities": {
+     "primary": 0.0188,
+     "transactions": 0.0626,
+     "updates": 0.0548,
+     "promotions": 0.8638
+    },
+    "tokens": 701,
+    "ms": 1084.3
+   },
+   "custom": {
+    "choice": "c1",
+    "confidence": 0.7613,
+    "probabilities": {
+     "primary": 0.0213,
+     "transactions": 0.0324,
+     "updates": 0.034,
+     "promotions": 0.1365,
+     "c1": 0.7613,
+     "c2": 0.0146
+    },
+    "tokens": 800,
+    "ms": 1101.1
+   }
+  },
+  {
+   "id": "c025",
+   "gold": "primary",
+   "accept": [
+    "promotions"
+   ],
+   "gold_custom": "primary",
+   "guess": "primary",
+   "text_chars": 708,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.8541,
+    "probabilities": {
+     "primary": 0.8541,
+     "transactions": 0.0064,
+     "updates": 0.0779,
+     "promotions": 0.0616
+    },
+    "tokens": 500,
+    "ms": 885.7
+   },
+   "custom": {
+    "choice": "primary",
+    "confidence": 0.8138,
+    "probabilities": {
+     "primary": 0.8138,
+     "transactions": 0.0084,
+     "updates": 0.1003,
+     "promotions": 0.0545,
+     "c1": 0.0161,
+     "c2": 0.0069
+    },
+    "tokens": 599,
+    "ms": 936.5
+   }
+  },
+  {
+   "id": "c026",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "transactions",
+   "text_chars": 989,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9485,
+    "probabilities": {
+     "primary": 0.0166,
+     "transactions": 0.9485,
+     "updates": 0.0194,
+     "promotions": 0.0156
+    },
+    "tokens": 667,
+    "ms": 1020.5
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.9348,
+    "probabilities": {
+     "primary": 0.0158,
+     "transactions": 0.9348,
+     "updates": 0.0158,
+     "promotions": 0.0149,
+     "c1": 0.009,
+     "c2": 0.0096
+    },
+    "tokens": 766,
+    "ms": 1175.2
+   }
+  },
+  {
+   "id": "c027",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "c1",
+   "guess": "updates",
+   "text_chars": 1525,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9604,
+    "probabilities": {
+     "primary": 0.0239,
+     "transactions": 0.0038,
+     "updates": 0.9604,
+     "promotions": 0.012
+    },
+    "tokens": 784,
+    "ms": 1084.4
+   },
+   "custom": {
+    "choice": "c1",
+    "confidence": 0.9787,
+    "probabilities": {
+     "primary": 0.0041,
+     "transactions": 0.0041,
+     "updates": 0.0057,
+     "promotions": 0.0037,
+     "c1": 0.9787,
+     "c2": 0.0037
+    },
+    "tokens": 883,
+    "ms": 1255.1
+   }
+  },
+  {
+   "id": "c028",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "promotions",
+   "text_chars": 1320,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9621,
+    "probabilities": {
+     "primary": 0.0085,
+     "transactions": 0.0083,
+     "updates": 0.0211,
+     "promotions": 0.9621
+    },
+    "tokens": 723,
+    "ms": 1122.0
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.9607,
+    "probabilities": {
+     "primary": 0.0069,
+     "transactions": 0.0079,
+     "updates": 0.0175,
+     "promotions": 0.9607,
+     "c1": 0.0036,
+     "c2": 0.0034
+    },
+    "tokens": 822,
+    "ms": 1131.4
+   }
+  },
+  {
+   "id": "c029",
+   "gold": "primary",
+   "accept": [
+    "transactions"
+   ],
+   "gold_custom": "primary",
+   "guess": "primary",
+   "text_chars": 1314,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9443,
+    "probabilities": {
+     "primary": 0.0215,
+     "transactions": 0.9443,
+     "updates": 0.0219,
+     "promotions": 0.0123
+    },
+    "tokens": 714,
+    "ms": 1123.1
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.9219,
+    "probabilities": {
+     "primary": 0.0225,
+     "transactions": 0.9219,
+     "updates": 0.0196,
+     "promotions": 0.0143,
+     "c1": 0.0115,
+     "c2": 0.0102
+    },
+    "tokens": 813,
+    "ms": 1117.6
+   }
+  },
+  {
+   "id": "c030",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "updates",
+   "text_chars": 1048,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9567,
+    "probabilities": {
+     "primary": 0.014,
+     "transactions": 0.9567,
+     "updates": 0.0144,
+     "promotions": 0.0149
+    },
+    "tokens": 735,
+    "ms": 1142.9
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.9411,
+    "probabilities": {
+     "primary": 0.0118,
+     "transactions": 0.9411,
+     "updates": 0.0151,
+     "promotions": 0.0156,
+     "c1": 0.0086,
+     "c2": 0.0078
+    },
+    "tokens": 834,
+    "ms": 1204.6
+   }
+  },
+  {
+   "id": "c031",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 1602,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9842,
+    "probabilities": {
+     "primary": 0.0054,
+     "transactions": 0.0049,
+     "updates": 0.9842,
+     "promotions": 0.0054
+    },
+    "tokens": 737,
+    "ms": 1139.8
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.9847,
+    "probabilities": {
+     "primary": 0.0032,
+     "transactions": 0.0036,
+     "updates": 0.9847,
+     "promotions": 0.0039,
+     "c1": 0.0022,
+     "c2": 0.0024
+    },
+    "tokens": 836,
+    "ms": 1196.7
+   }
+  },
+  {
+   "id": "c032",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "promotions",
+   "text_chars": 1242,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.98,
+    "probabilities": {
+     "primary": 0.0063,
+     "transactions": 0.0065,
+     "updates": 0.0073,
+     "promotions": 0.98
+    },
+    "tokens": 717,
+    "ms": 1134.7
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.9779,
+    "probabilities": {
+     "primary": 0.0048,
+     "transactions": 0.0054,
+     "updates": 0.0067,
+     "promotions": 0.9779,
+     "c1": 0.0026,
+     "c2": 0.0026
+    },
+    "tokens": 816,
+    "ms": 1135.6
+   }
+  },
+  {
+   "id": "c033",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "primary",
+   "guess": "primary",
+   "text_chars": 444,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.9578,
+    "probabilities": {
+     "primary": 0.9578,
+     "transactions": 0.0122,
+     "updates": 0.0171,
+     "promotions": 0.0129
+    },
+    "tokens": 464,
+    "ms": 864.7
+   },
+   "custom": {
+    "choice": "primary",
+    "confidence": 0.9172,
+    "probabilities": {
+     "primary": 0.9172,
+     "transactions": 0.0124,
+     "updates": 0.0169,
+     "promotions": 0.0128,
+     "c1": 0.0279,
+     "c2": 0.0128
+    },
+    "tokens": 563,
+    "ms": 903.0
+   }
+  },
+  {
+   "id": "c034",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "c1",
+   "guess": "transactions",
+   "text_chars": 1003,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9663,
+    "probabilities": {
+     "primary": 0.0121,
+     "transactions": 0.9663,
+     "updates": 0.0103,
+     "promotions": 0.0113
+    },
+    "tokens": 644,
+    "ms": 984.3
+   },
+   "custom": {
+    "choice": "c1",
+    "confidence": 0.8947,
+    "probabilities": {
+     "primary": 0.007,
+     "transactions": 0.0819,
+     "updates": 0.0058,
+     "promotions": 0.0051,
+     "c1": 0.8947,
+     "c2": 0.0054
+    },
+    "tokens": 743,
+    "ms": 1152.9
+   }
+  },
+  {
+   "id": "c035",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 1382,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9099,
+    "probabilities": {
+     "primary": 0.04,
+     "transactions": 0.0235,
+     "updates": 0.9099,
+     "promotions": 0.0266
+    },
+    "tokens": 756,
+    "ms": 1169.7
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.8893,
+    "probabilities": {
+     "primary": 0.0367,
+     "transactions": 0.0209,
+     "updates": 0.8893,
+     "promotions": 0.0252,
+     "c1": 0.0144,
+     "c2": 0.0135
+    },
+    "tokens": 855,
+    "ms": 1223.3
+   }
+  },
+  {
+   "id": "c036",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "updates",
+   "text_chars": 1481,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9444,
+    "probabilities": {
+     "primary": 0.0196,
+     "transactions": 0.0157,
+     "updates": 0.0202,
+     "promotions": 0.9444
+    },
+    "tokens": 778,
+    "ms": 1067.7
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.9261,
+    "probabilities": {
+     "primary": 0.0189,
+     "transactions": 0.0147,
+     "updates": 0.0189,
+     "promotions": 0.9261,
+     "c1": 0.0087,
+     "c2": 0.0126
+    },
+    "tokens": 877,
+    "ms": 1232.5
+   }
+  },
+  {
+   "id": "c037",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "primary",
+   "guess": "updates",
+   "text_chars": 731,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.6134,
+    "probabilities": {
+     "primary": 0.0662,
+     "transactions": 0.6134,
+     "updates": 0.2809,
+     "promotions": 0.0395
+    },
+    "tokens": 546,
+    "ms": 873.0
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.6332,
+    "probabilities": {
+     "primary": 0.0824,
+     "transactions": 0.6332,
+     "updates": 0.2188,
+     "promotions": 0.0524,
+     "c1": 0.0078,
+     "c2": 0.0053
+    },
+    "tokens": 645,
+    "ms": 979.3
+   }
+  },
+  {
+   "id": "c038",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "c2",
+   "guess": "updates",
+   "text_chars": 1249,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.926,
+    "probabilities": {
+     "primary": 0.0247,
+     "transactions": 0.926,
+     "updates": 0.0205,
+     "promotions": 0.0289
+    },
+    "tokens": 750,
+    "ms": 1144.6
+   },
+   "custom": {
+    "choice": "c2",
+    "confidence": 0.9083,
+    "probabilities": {
+     "primary": 0.0122,
+     "transactions": 0.0545,
+     "updates": 0.0086,
+     "promotions": 0.0092,
+     "c1": 0.0072,
+     "c2": 0.9083
+    },
+    "tokens": 849,
+    "ms": 1200.5
+   }
+  },
+  {
+   "id": "c039",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 1317,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9058,
+    "probabilities": {
+     "primary": 0.034,
+     "transactions": 0.0282,
+     "updates": 0.9058,
+     "promotions": 0.032
+    },
+    "tokens": 648,
+    "ms": 994.9
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.8926,
+    "probabilities": {
+     "primary": 0.0278,
+     "transactions": 0.0223,
+     "updates": 0.8926,
+     "promotions": 0.0287,
+     "c1": 0.0158,
+     "c2": 0.0127
+    },
+    "tokens": 747,
+    "ms": 1145.2
+   }
+  },
+  {
+   "id": "c040",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "promotions",
+   "text_chars": 1230,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9344,
+    "probabilities": {
+     "primary": 0.014,
+     "transactions": 0.0149,
+     "updates": 0.0368,
+     "promotions": 0.9344
+    },
+    "tokens": 711,
+    "ms": 1100.8
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.9203,
+    "probabilities": {
+     "primary": 0.0138,
+     "transactions": 0.0163,
+     "updates": 0.038,
+     "promotions": 0.9203,
+     "c1": 0.0061,
+     "c2": 0.0056
+    },
+    "tokens": 810,
+    "ms": 1114.0
+   }
+  },
+  {
+   "id": "c041",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "c1",
+   "guess": "primary",
+   "text_chars": 649,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.9299,
+    "probabilities": {
+     "primary": 0.9299,
+     "transactions": 0.018,
+     "updates": 0.0459,
+     "promotions": 0.0062
+    },
+    "tokens": 491,
+    "ms": 879.8
+   },
+   "custom": {
+    "choice": "c1",
+    "confidence": 0.9706,
+    "probabilities": {
+     "primary": 0.009,
+     "transactions": 0.0048,
+     "updates": 0.0051,
+     "promotions": 0.0055,
+     "c1": 0.9706,
+     "c2": 0.005
+    },
+    "tokens": 590,
+    "ms": 931.5
+   }
+  },
+  {
+   "id": "c042",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "transactions",
+   "text_chars": 741,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9696,
+    "probabilities": {
+     "primary": 0.0084,
+     "transactions": 0.9696,
+     "updates": 0.0098,
+     "promotions": 0.0122
+    },
+    "tokens": 619,
+    "ms": 940.5
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.9608,
+    "probabilities": {
+     "primary": 0.0082,
+     "transactions": 0.9608,
+     "updates": 0.0087,
+     "promotions": 0.0112,
+     "c1": 0.0056,
+     "c2": 0.0055
+    },
+    "tokens": 718,
+    "ms": 1125.4
+   }
+  },
+  {
+   "id": "c043",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 1275,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9229,
+    "probabilities": {
+     "primary": 0.0393,
+     "transactions": 0.0174,
+     "updates": 0.9229,
+     "promotions": 0.0204
+    },
+    "tokens": 715,
+    "ms": 1130.1
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.9178,
+    "probabilities": {
+     "primary": 0.0327,
+     "transactions": 0.0122,
+     "updates": 0.9178,
+     "promotions": 0.0178,
+     "c1": 0.012,
+     "c2": 0.0075
+    },
+    "tokens": 814,
+    "ms": 1118.6
+   }
+  },
+  {
+   "id": "c044",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "promotions",
+   "text_chars": 1203,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.902,
+    "probabilities": {
+     "primary": 0.0264,
+     "transactions": 0.0355,
+     "updates": 0.0361,
+     "promotions": 0.902
+    },
+    "tokens": 669,
+    "ms": 1017.9
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.8819,
+    "probabilities": {
+     "primary": 0.0254,
+     "transactions": 0.0394,
+     "updates": 0.0376,
+     "promotions": 0.8819,
+     "c1": 0.0078,
+     "c2": 0.008
+    },
+    "tokens": 768,
+    "ms": 1181.9
+   }
+  },
+  {
+   "id": "c045",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "primary",
+   "guess": "updates",
+   "text_chars": 768,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.8639,
+    "probabilities": {
+     "primary": 0.1069,
+     "transactions": 0.0113,
+     "updates": 0.8639,
+     "promotions": 0.018
+    },
+    "tokens": 574,
+    "ms": 911.6
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.7022,
+    "probabilities": {
+     "primary": 0.2262,
+     "transactions": 0.0132,
+     "updates": 0.7022,
+     "promotions": 0.0207,
+     "c1": 0.0209,
+     "c2": 0.0169
+    },
+    "tokens": 673,
+    "ms": 1017.6
+   }
+  },
+  {
+   "id": "c046",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "transactions",
+   "text_chars": 748,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9764,
+    "probabilities": {
+     "primary": 0.0072,
+     "transactions": 0.9764,
+     "updates": 0.0069,
+     "promotions": 0.0095
+    },
+    "tokens": 633,
+    "ms": 950.3
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.9681,
+    "probabilities": {
+     "primary": 0.0069,
+     "transactions": 0.9681,
+     "updates": 0.0063,
+     "promotions": 0.0097,
+     "c1": 0.0043,
+     "c2": 0.0047
+    },
+    "tokens": 732,
+    "ms": 1152.2
+   }
+  },
+  {
+   "id": "c047",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 558,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9579,
+    "probabilities": {
+     "primary": 0.0124,
+     "transactions": 0.0088,
+     "updates": 0.9579,
+     "promotions": 0.0208
+    },
+    "tokens": 501,
+    "ms": 882.4
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.9576,
+    "probabilities": {
+     "primary": 0.0098,
+     "transactions": 0.0072,
+     "updates": 0.9576,
+     "promotions": 0.0165,
+     "c1": 0.0045,
+     "c2": 0.0044
+    },
+    "tokens": 600,
+    "ms": 929.4
+   }
+  },
+  {
+   "id": "c048",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "promotions",
+   "text_chars": 1260,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9734,
+    "probabilities": {
+     "primary": 0.0074,
+     "transactions": 0.0068,
+     "updates": 0.0124,
+     "promotions": 0.9734
+    },
+    "tokens": 684,
+    "ms": 1039.4
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.9671,
+    "probabilities": {
+     "primary": 0.0066,
+     "transactions": 0.0062,
+     "updates": 0.0123,
+     "promotions": 0.9671,
+     "c1": 0.0045,
+     "c2": 0.0034
+    },
+    "tokens": 783,
+    "ms": 1080.8
+   }
+  },
+  {
+   "id": "c049",
+   "gold": "primary",
+   "accept": [
+    "transactions"
+   ],
+   "gold_custom": "c2",
+   "guess": "primary",
+   "text_chars": 846,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.6153,
+    "probabilities": {
+     "primary": 0.2975,
+     "transactions": 0.6153,
+     "updates": 0.0614,
+     "promotions": 0.0258
+    },
+    "tokens": 614,
+    "ms": 945.8
+   },
+   "custom": {
+    "choice": "c2",
+    "confidence": 0.9627,
+    "probabilities": {
+     "primary": 0.0103,
+     "transactions": 0.0106,
+     "updates": 0.0057,
+     "promotions": 0.0052,
+     "c1": 0.0055,
+     "c2": 0.9627
+    },
+    "tokens": 713,
+    "ms": 1112.1
+   }
+  },
+  {
+   "id": "c050",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "transactions",
+   "text_chars": 808,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9746,
+    "probabilities": {
+     "primary": 0.0088,
+     "transactions": 0.9746,
+     "updates": 0.0093,
+     "promotions": 0.0073
+    },
+    "tokens": 623,
+    "ms": 947.5
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.9676,
+    "probabilities": {
+     "primary": 0.007,
+     "transactions": 0.9676,
+     "updates": 0.0079,
+     "promotions": 0.0072,
+     "c1": 0.0048,
+     "c2": 0.0054
+    },
+    "tokens": 722,
+    "ms": 1134.5
+   }
+  },
+  {
+   "id": "c051",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "c2",
+   "guess": "transactions",
+   "text_chars": 953,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.5423,
+    "probabilities": {
+     "primary": 0.0942,
+     "transactions": 0.3138,
+     "updates": 0.5423,
+     "promotions": 0.0497
+    },
+    "tokens": 674,
+    "ms": 1031.7
+   },
+   "custom": {
+    "choice": "c2",
+    "confidence": 0.942,
+    "probabilities": {
+     "primary": 0.0126,
+     "transactions": 0.0152,
+     "updates": 0.0139,
+     "promotions": 0.0081,
+     "c1": 0.0081,
+     "c2": 0.942
+    },
+    "tokens": 773,
+    "ms": 1073.4
+   }
+  },
+  {
+   "id": "c052",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "updates",
+   "text_chars": 1242,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.8816,
+    "probabilities": {
+     "primary": 0.013,
+     "transactions": 0.0154,
+     "updates": 0.0901,
+     "promotions": 0.8816
+    },
+    "tokens": 719,
+    "ms": 1111.4
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.8806,
+    "probabilities": {
+     "primary": 0.0124,
+     "transactions": 0.0161,
+     "updates": 0.0794,
+     "promotions": 0.8806,
+     "c1": 0.0062,
+     "c2": 0.0053
+    },
+    "tokens": 818,
+    "ms": 1127.4
+   }
+  },
+  {
+   "id": "c053",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "primary",
+   "guess": "primary",
+   "text_chars": 738,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.9193,
+    "probabilities": {
+     "primary": 0.9193,
+     "transactions": 0.0163,
+     "updates": 0.0179,
+     "promotions": 0.0465
+    },
+    "tokens": 577,
+    "ms": 930.3
+   },
+   "custom": {
+    "choice": "primary",
+    "confidence": 0.8819,
+    "probabilities": {
+     "primary": 0.8819,
+     "transactions": 0.0179,
+     "updates": 0.0196,
+     "promotions": 0.0464,
+     "c1": 0.0216,
+     "c2": 0.0127
+    },
+    "tokens": 676,
+    "ms": 1023.9
+   }
+  },
+  {
+   "id": "c054",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "transactions",
+   "text_chars": 665,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9698,
+    "probabilities": {
+     "primary": 0.008,
+     "transactions": 0.9698,
+     "updates": 0.0109,
+     "promotions": 0.0113
+    },
+    "tokens": 552,
+    "ms": 880.2
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.9608,
+    "probabilities": {
+     "primary": 0.0081,
+     "transactions": 0.9608,
+     "updates": 0.0108,
+     "promotions": 0.0108,
+     "c1": 0.0049,
+     "c2": 0.0046
+    },
+    "tokens": 651,
+    "ms": 1007.3
+   }
+  },
+  {
+   "id": "c055",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 692,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.8935,
+    "probabilities": {
+     "primary": 0.0372,
+     "transactions": 0.0303,
+     "updates": 0.8935,
+     "promotions": 0.039
+    },
+    "tokens": 551,
+    "ms": 882.0
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.8844,
+    "probabilities": {
+     "primary": 0.0338,
+     "transactions": 0.0218,
+     "updates": 0.8844,
+     "promotions": 0.044,
+     "c1": 0.0078,
+     "c2": 0.0083
+    },
+    "tokens": 650,
+    "ms": 997.7
+   }
+  },
+  {
+   "id": "c056",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "promotions",
+   "text_chars": 1263,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9086,
+    "probabilities": {
+     "primary": 0.0189,
+     "transactions": 0.0172,
+     "updates": 0.0554,
+     "promotions": 0.9086
+    },
+    "tokens": 755,
+    "ms": 1164.3
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.8881,
+    "probabilities": {
+     "primary": 0.019,
+     "transactions": 0.0179,
+     "updates": 0.0633,
+     "promotions": 0.8881,
+     "c1": 0.0066,
+     "c2": 0.0051
+    },
+    "tokens": 854,
+    "ms": 1197.5
+   }
+  },
+  {
+   "id": "c057",
+   "gold": "primary",
+   "accept": [],
+   "gold_custom": "primary",
+   "guess": "primary",
+   "text_chars": 593,
+   "builtin": {
+    "choice": "primary",
+    "confidence": 0.7421,
+    "probabilities": {
+     "primary": 0.7421,
+     "transactions": 0.077,
+     "updates": 0.1708,
+     "promotions": 0.0101
+    },
+    "tokens": 516,
+    "ms": 847.6
+   },
+   "custom": {
+    "choice": "primary",
+    "confidence": 0.711,
+    "probabilities": {
+     "primary": 0.711,
+     "transactions": 0.0836,
+     "updates": 0.1538,
+     "promotions": 0.0094,
+     "c1": 0.0236,
+     "c2": 0.0187
+    },
+    "tokens": 615,
+    "ms": 943.1
+   }
+  },
+  {
+   "id": "c058",
+   "gold": "transactions",
+   "accept": [],
+   "gold_custom": "transactions",
+   "guess": "transactions",
+   "text_chars": 955,
+   "builtin": {
+    "choice": "transactions",
+    "confidence": 0.9613,
+    "probabilities": {
+     "primary": 0.0121,
+     "transactions": 0.9613,
+     "updates": 0.0133,
+     "promotions": 0.0133
+    },
+    "tokens": 668,
+    "ms": 1011.4
+   },
+   "custom": {
+    "choice": "transactions",
+    "confidence": 0.955,
+    "probabilities": {
+     "primary": 0.0097,
+     "transactions": 0.955,
+     "updates": 0.0103,
+     "promotions": 0.012,
+     "c1": 0.0066,
+     "c2": 0.0064
+    },
+    "tokens": 767,
+    "ms": 1185.5
+   }
+  },
+  {
+   "id": "c059",
+   "gold": "updates",
+   "accept": [],
+   "gold_custom": "updates",
+   "guess": "updates",
+   "text_chars": 1430,
+   "builtin": {
+    "choice": "updates",
+    "confidence": 0.9611,
+    "probabilities": {
+     "primary": 0.0115,
+     "transactions": 0.0105,
+     "updates": 0.9611,
+     "promotions": 0.0168
+    },
+    "tokens": 678,
+    "ms": 1024.7
+   },
+   "custom": {
+    "choice": "updates",
+    "confidence": 0.9534,
+    "probabilities": {
+     "primary": 0.0099,
+     "transactions": 0.0087,
+     "updates": 0.9534,
+     "promotions": 0.0153,
+     "c1": 0.0064,
+     "c2": 0.0064
+    },
+    "tokens": 777,
+    "ms": 1079.5
+   }
+  },
+  {
+   "id": "c060",
+   "gold": "promotions",
+   "accept": [],
+   "gold_custom": "promotions",
+   "guess": "promotions",
+   "text_chars": 1233,
+   "builtin": {
+    "choice": "promotions",
+    "confidence": 0.9461,
+    "probabilities": {
+     "primary": 0.0109,
+     "transactions": 0.0159,
+     "updates": 0.027,
+     "promotions": 0.9461
+    },
+    "tokens": 674,
+    "ms": 1026.7
+   },
+   "custom": {
+    "choice": "promotions",
+    "confidence": 0.9408,
+    "probabilities": {
+     "primary": 0.0093,
+     "transactions": 0.014,
+     "updates": 0.0245,
+     "promotions": 0.9408,
+     "c1": 0.0047,
+     "c2": 0.0068
+    },
+    "tokens": 773,
+    "ms": 1068.5
+   }
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+  // Only ever run with `wrangler dev` (see workersai.mts): an AI binding calls Workers AI itself even
+  // in dev, under the wrangler login, so the bench needs no API token and nothing gets deployed.
+  "name": "personal-mail-clef-bench",
+  "main": "index.ts",
+  "compatibility_date": "2026-08-15",
+  "workers_dev": false,
+  "ai": { "binding": "AI", "remote": true }
+}

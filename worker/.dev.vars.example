@@ -1,0 +1,3 @@
+# Copy to .dev.vars for `wrangler dev` (never uploaded). Signs in requests to
+# localhost only, as this address, so the web client works without Access.
+DEV_ACCESS_EMAIL=you@example.com

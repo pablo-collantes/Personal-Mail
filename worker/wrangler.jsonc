@@ -1,0 +1,112 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "personal-mail",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-15",
+  // The only HTTP front door. Cloudflare Access guards the hostname, and the
+  // Worker re-checks Access's JWT (src/http/access.ts).
+  "routes": [{ "pattern": "mail.example.com", "custom_domain": true }],
+  "workers_dev": false,
+  "preview_urls": false,
+  // The web client, built from a checkout of the web client in
+  // clients/jmap-webmail by `npm run build:web`.
+  // The Worker runs first for every path, so the Access check covers the
+  // app's files too.
+  "assets": {
+    "directory": "./web",
+    "binding": "ASSETS",
+    "run_worker_first": true,
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "observability": { "enabled": true },
+  // `wrangler dev` would otherwise rewrite request URLs to the production
+  // hostname; keep them on localhost (see devCaller in src/http/router.ts).
+  "dev": { "ip": "127.0.0.1", "port": 8787, "local_protocol": "http", "upstream_protocol": "http", "host": "127.0.0.1:8787" },
+  "r2_buckets": [{ "binding": "MAIL_BUCKET", "bucket_name": "personal-mail" }],
+  "queues": {
+    "producers": [{ "binding": "INGEST_QUEUE", "queue": "personal-mail-ingest" }],
+    "consumers": [
+      { "queue": "personal-mail-ingest", "max_batch_size": 5, "max_batch_timeout": 1, "max_retries": 10 }
+    ]
+  },
+  "durable_objects": {
+    "bindings": [
+      { "name": "MAILBOX", "class_name": "Mailbox" },
+      { "name": "IMAP_SOURCE", "class_name": "ImapSource" }
+    ]
+  },
+  "migrations": [
+    { "tag": "v1", "new_sqlite_classes": ["Mailbox"] },
+    { "tag": "v2", "new_sqlite_classes": ["ImapSource"] }
+  ],
+  // Hourly: make sure each IMAP account is polling (each one polls every 15 s
+  // on its ImapSource's own alarm), re-enqueue stored mail that never got
+  // indexed, finish pending deletes, apply the attachment retention setting.
+  // 23:00 UTC: the classifier's backlog hour, on what's left of the day's
+  // Workers AI allowance before it resets at midnight (BACKLOG_CRON).
+  "triggers": { "crons": ["7 * * * *", "0 23 * * *"] },
+  // Inbox categories' classifier (src/classifier.ts): Clef on Workers AI, through this binding.
+  "ai": { "binding": "AI", "remote": true },
+  "vars": {
+    // @cf/cloudflare/clef, the full-precision 27B. New mail is asked about as it arrives, older
+    // mail at 23:00-24:00 UTC, newest first, until CLASSIFIER_DAILY_NEURONS are spent: Workers AI's
+    // free 10,000 a day, less a margin, are about 435k tokens, some 580 messages. (A CLASSIFIER_URL
+    // secret, set by deploy/clef/cloudflare.sh, would send the requests to a SystemOne endpoint
+    // over HTTP instead, with no allowance.)
+    "CLASSIFIER_MODEL": "clef",
+    "CLASSIFIER_DAILY_NEURONS": 9500,
+    // The Mailbox Durable Object's name, which is also the JMAP account id.
+    "MAILBOX_NAME": "me",
+    // The Cloudflare Access application on the mail hostname. Until both the
+    // team domain (<team>.cloudflareaccess.com) and the app's AUD tag are set,
+    // every request gets a 404.
+    "ACCESS_TEAM_DOMAIN": "",
+    "ACCESS_AUD": "",
+    // Who may in: people by the email their login reports, and service
+    // tokens (the phone app) by client id (<id>.access). Comma-separated.
+    "ACCESS_ALLOWED_EMAILS": "you@example.com",
+    "ACCESS_SERVICE_TOKENS": "",
+    // Comma-separated authserv-ids whose Authentication-Results header we
+    // trust (the topmost one only). Email Routing prepends its own
+    // `mx.cloudflare.net` header above the sender's.
+    "TRUSTED_AUTHSERV_IDS": "mx.cloudflare.net",
+    "LOG_AUTH_HEADERS": "false",
+    // Accounts pulled over IMAP (see src/imap/config.ts). Each one stays idle
+    // until its password secret exists: `wrangler secret put <passwordSecret>`.
+    // Polling is read-only: nothing is deleted or marked read on the server.
+    "IMAP_SOURCES": [
+      {
+        "name": "primary",
+        "host": "imap.example.net",
+        "port": 993,
+        "user": "you@example.net",
+        "address": "you@example.net",
+        "passwordSecret": "IMAP_PASSWORD_PRIMARY",
+        "mailboxes": ["INBOX"],
+        // The Sent folder too (found by its \Sent mark or name), filed into
+        // Sent; with backfill on, its history comes as well.
+        "sent": true,
+        // Import what is already there, newest first, up to this many MB per
+        // UTC day (default 1500).
+        "backfill": true,
+        "dailyBackfillMB": 1500,
+        // This provider adds no Authentication-Results header, so the Worker
+        // checks this account's DKIM signatures itself.
+        "trustedAuthservIds": []
+      },
+      {
+        "name": "gmail",
+        "host": "imap.gmail.com",
+        "port": 993,
+        "user": "you@gmail.com",
+        "address": "you@gmail.com",
+        "passwordSecret": "IMAP_PASSWORD_GMAIL",
+        "mailboxes": ["INBOX"],
+        "sent": true,
+        "backfill": false,
+        "trustedAuthservIds": ["mx.google.com"]
+      }
+    ]
+  }
+}

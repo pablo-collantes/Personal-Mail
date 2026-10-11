@@ -1,0 +1,9 @@
+node_modules/
+.wrangler/
+.dev.vars*
+!.dev.vars.example
+NOTES.md
+
+# Client forks are their own git repos; build:web expects the web client here.
+/clients/
+/worker/web/
